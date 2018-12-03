@@ -17,9 +17,9 @@ tags:
 
 Pdf is generally an academic standard format, and I also use latex to organize my notes. The pdf reader is very important to me. After wasting a lot of time trying out PDF Readers in the market, I formed my own plan.
 
-## Request
+## Requests
 
-My request is not high:
+My requests are not high:
 - Cross-platform (Linux & Android)
 - Comments and highlights
 
@@ -27,35 +27,37 @@ My request is not high:
 
 ### PC
 
-- X Change(Windows)
+#### X Change(Windows)
 
 This is the PDF Reader I used in high school (use the win7 stealthy in the classroom, 
 this win7 was basically like my personal computer 0.-) is a very good Reader, even if you don't not pay any, 
 it provides a lot of Features. Although the toolbar is very messy, it is very convenient to use after being familiar. 
 The fly in the ointment is that Linux is not supported.
 
-- Evince(Linux)
+#### Evince(Linux)
 
 Evince is very simple.
 But I got some unendurable bugs when when highlighted. 
 I don’t know whether it is fixed now.
 
-- Okular(linux)
+#### Okular(linux)
 
-Okular's very mature **document** Reader, with a variety of document formats support, is quite customizable.
+Okular is a very mature **document** Reader, with a variety of document formats support, is quite customizable.
 A blog I browsed on the Internet said that Okular was 114M, and evince was only 11M. Indeed, this is also for users. those pdf heavy users could dislike Evince.
 The main reason I choose kde is that Okualr and Goldendict are the most convenient pdf reader and dictionary I've ever use.
 
-- Zathura, I know a lot of moguls(大佬) use this, eh...but I've not.So, no use, no more mouths...
+#### Zathura
 
-- Master PDF Editor(linux)
+I know a lot of moguls(大佬) use this, eh...but I've not. So, no use, no more mouths...
+
+#### Master PDF Editor(linux)
 
 The shortcuts were extremely inconvenient to set up at the time and it didn't a pleasant cooperation with Goldendict. 
 The word-taking function is blocked.
 
-Commercial software, and too expensive, which could make you go die. There is a very tasteless function: you can modify the pdf like M$-Word, but that will generated a pdf with watermark, if you don't like? pay to eliminate the watermark...
+Commercial software, and too expensive, which could make you go die. And there is a very tasteless function: you can modify the pdf like M$-Word, but that will generated a pdf with watermark, what if you don't like? **Pay** to eliminate the watermark...
 
-- Foxit Reader(Linux) 
+#### Foxit Reader(Linux) 
 
 After knowing that there is a praise in zhihu, I tried it. At that time (August 2018), It couldn't be full of screen,
 and the shortcuts couldn't be customized. I will never trust zhihu anymore...
@@ -73,11 +75,11 @@ If you are a "tuhao", please be sure not to make any excuse to support the autho
 
 #### Sumatra PDF 
 
-When you've finished a beamer, but your school computer only has Chrome to show your beamer, you might want to install this on the USB stick...
+When you've finished a beamer, but your school computer only has Chrome to show your beamer, Installing this on the USB stick might be your good choice...
 
 ## Cross-platform synchronization
 
-I'm currently using dropbox & Flodersync
+I am currently using dropbox & Flodersync
 
 ### Dropbox
 
@@ -112,7 +114,7 @@ I use 欧路 firstly, which also supports a variety of formats. So I didn't have
 
 While playing football, the mobile phone screen had been trodden into terribly crashed by some guy in case I was unconscious. `%>_<%` This is the second time that the screen was broken, so I'm not going to change the screen; 
 
-So, as far as I am concerned, the only purpose of having a mobile phone, is to receive messages from my stupid school who sends important messages by QQ??!! 
+So, as far as I am concerned, the only purpose of having a mobile phone, is to receive messages from my stupid school who sends important notices only by that stupid tencent QQ??!! 
 
 Um...still, using my dear Arch Linux is always more efficiently.
 
