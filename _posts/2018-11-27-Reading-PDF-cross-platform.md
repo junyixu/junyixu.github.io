@@ -5,7 +5,7 @@ comments:   true
 subtitle:   Reading PDF cross-platform
 date:       2018-11-27
 author:     Junix
-header-img: img/post-bg-coffee.jpg
+header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
     - Linux
