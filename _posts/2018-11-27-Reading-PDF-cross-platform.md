@@ -13,6 +13,114 @@ tags:
     - Academic
 ---
 
+## Abstract
+
+Pdf is generally an academic standard format, and I also use latex to organize my notes. The pdf reader is very important to me. After wasting a lot of time trying out PDF Readers in the market, I formed my own plan.
+
+## Request
+
+My request is not high:
+- Cross-platform (Linux & Android)
+- Comments and highlights
+
+## PDF Readers I tried
+
+### PC
+
+- X Change(Windows)
+
+This is the PDF Reader I used in high school (use the win7 stealthy in the classroom, 
+this win7 was basically like my personal computer 0.-) is a very good Reader, even if you don't not pay any, 
+it provides a lot of Features. Although the toolbar is very messy, it is very convenient to use after being familiar. 
+The fly in the ointment is that Linux is not supported.
+
+- Evince(Linux)
+
+Evince is very simple.
+But I got some unendurable bugs when when highlighted. 
+I don’t know whether it is fixed now.
+
+- Okular(linux)
+
+Okular's very mature **document** Reader, with a variety of document formats support, is quite customizable.
+A blog I browsed on the Internet said that Okular was 114M, and evince was only 11M. Indeed, this is also for users. those pdf heavy users could dislike Evince.
+The main reason I choose kde is that Okualr and Goldendict are the most convenient pdf reader and dictionary I've ever use.
+
+- Zathura, I know a lot of moguls(大佬) use this, eh...but I've not.So, no use, no more mouths...
+
+- Master PDF Editor(linux)
+
+The shortcuts were extremely inconvenient to set up at the time and it didn't a pleasant cooperation with Goldendict. 
+The word-taking function is blocked.
+
+Commercial software, and too expensive, which could make you go die. There is a very tasteless function: you can modify the pdf like M$-Word, but that will generated a pdf with watermark, if you don't like? pay to eliminate the watermark...
+
+- Foxit Reader(Linux) 
+
+After knowing that there is a praise in zhihu, I tried it. At that time (August 2018), It couldn't be full of screen,
+and the shortcuts couldn't be customized. I will never trust zhihu anymore...
+
+### Android
+
+Moon+ is a famous Reader on the Android platform.  
+It supports a wide range of formats and equips with a high responding speed.
+It is said that the free version has some features of castration and advertising. 
+~~However, there are various cracked versions on the Internet (such as 酷安).~~
+
+If you are a "tuhao", please be sure not to make any excuse to support the author of Moon+.
+
+### USB Disk
+
+#### Sumatra PDF 
+
+When you've finished a beamer, but your school computer only has Chrome to show your beamer, you might want to install this on the USB stick...
+
+## Cross-platform synchronization
+
+I'm currently using dropbox & Flodersync
+
+### Dropbox
+
+It is said that google drive is better, tightly integrated with google doc, and has a larger capacity.
+
+But I just searched the dropbox firstly on the archlinux wiki and installed the official dropbox directly.
+
+If you don't have a dropbox account yet, why not click on my recommended link <https://db.tt/ihSbliC5mF>, so that both of us can get a 500M.
+
+Install dropbox under Arch:
+```
+Yay -S dropbox
+```
+
+Since dropbox's 2GB+500M space is enough for me to sync the books I am reading, I will not continue to toss for the monent.
+
+### Flodersync
+
+Android's official Dropbox, in order to save traffic and space, provides a File list. You have to download the specified file yourself. Not only that, but most of the downloaded files are Read-Only. 
+After trying commenting with the Reader, you will find that this file cannot be saved. 
+In this case, we can't commit PDF cross-platform annotating happily.
+
+Flodersync (or Dropsync) implements a two-way synchronization function.
+
+## Android dictionary
+
+I currently using the 欧路 dictionary (commercial software). 
+Goldendict also has Android version.
+I use 欧路 firstly, which also supports a variety of formats. So I didn't have a switch.
+
+## Postscript
+
+While playing football, the mobile phone screen had been trodden into terribly crashed by some guy in case I was unconscious. `%>_<%` This is the second time that the screen was broken, so I'm not going to change the screen; 
+
+So, as far as I am concerned, the only purpose of having a mobile phone, is to receive messages from my stupid school who sends important messages by QQ??!! 
+
+Um...still, using my dear Arch Linux is always more efficiently.
+
+### Reference
+1. <https://blog.yuanbin.me/posts/2013-01/2013-01-31_23-07-00/>
+2. <https://blog.csdn.net/u014015972/article/details/50659952>
+3. <https://xuanwo.io/2015/12/23/best-pdf-read-solution/>
+
 ## 摘要
 
 pdf基本是学术标准格式,加上我也用latex整理笔记,pdf阅读器对我来说十分关键。
@@ -24,6 +132,7 @@ pdf基本是学术标准格式,加上我也用latex整理笔记,pdf阅读器对�
 
 * 跨平台(Linux & Android)
 * 批注和高亮
+
 
 ## 尝试的阅读器
 
