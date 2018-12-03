@@ -116,7 +116,7 @@ While playing football, the mobile phone screen had been trodden into terribly c
 
 So, as far as I am concerned, the only purpose of having a mobile phone, is to receive messages from my stupid school who sends important notices only by that stupid tencent QQ??!! 
 
-Um...still, using my dear Arch Linux is always more efficiently.
+Um...still, using my dear Arch Linux is always more efficient.
 
 ### Reference
 1. <https://blog.yuanbin.me/posts/2013-01/2013-01-31_23-07-00/>
