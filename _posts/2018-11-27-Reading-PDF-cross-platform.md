@@ -91,7 +91,7 @@ If you don't have a dropbox account yet, why not click on my recommended link <h
 
 Install dropbox under Arch:
 ```
-Yay -S dropbox
+yay -S dropbox
 ```
 
 Since dropbox's 2GB+500M space is enough for me to sync the books I am reading, I will not continue to toss for the monent.
