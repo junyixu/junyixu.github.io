@@ -99,5 +99,9 @@ friends: [
     {
         title: "Nova",
         href: "https://nova.moe"
+    },
+    {
+        title: "惠狐之书",
+        href: "https://blog.megumifox.com"
     }
 ]
