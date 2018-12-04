@@ -38,7 +38,7 @@ The fly in the ointment is that Linux is not supported.
 #### Evince (Linux)
 
 Evince is simple.
-But I got some unendurable bugs when when highlighting. 
+But I got some unendurable bugs when highlighting. 
 I don’t know whether it is fixed now.
 
 #### Okular (Linux)
