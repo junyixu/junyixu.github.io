@@ -123,9 +123,9 @@ Um...still, using my dear Arch Linux is always more efficient.
 1. <https://blog.yuanbin.me/posts/2013-01/2013-01-31_23-07-00/>
 2. <https://xuanwo.io/2015/12/23/best-pdf-read-solution/>
 
-[2]:(https://blog.csdn.net/u014015972/article/details/50659952)
-[3]:(http://goldendict.org/)
-[4]:(https://www.eudic.net/v4/en/app/download?#mobile)
+[2]: https://blog.csdn.net/u014015972/article/details/50659952
+[3]: http://goldendict.org/
+[4]: https://www.eudic.net/v4/en/app/download?#mobile
 
 ## 摘要
 
