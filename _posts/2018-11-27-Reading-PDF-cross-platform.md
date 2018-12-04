@@ -56,8 +56,8 @@ I know a lot of moguls(大佬) use this, eh...but I've not. So, no use, no more 
 
 The shortcuts were extremely inconvenient to set up at the time and it didn't have a pleasant cooperation with Goldendict:
 the word-taking function is blocked.
-Commercial software, and too expensive as well as Mathematica, which could make you go die. 
-And there is a very tasteless function: you can modify the pdf in a M$-Word way, but that will generated a pdf with a big watermark: "This PDF was built by Master PDF Editor". What if you don't like? **Pay** to eliminate the watermark...
+Commercial software, and as expensive as Mathematica, anyway, I can't afford it as a poor student.
+And there is a very tasteless function: you can modify the pdf in a M$-Word way, but that will generated a pdf with some big watermarks: "This PDF was built by Master PDF Editor". What if you don't like? **Pay** to eliminate the watermarks...
 
 #### Foxit Reader (Linux) 
 
