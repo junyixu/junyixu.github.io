@@ -8,74 +8,77 @@ author:     Junix
 header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
-- Linux
-- PDF
-- Academic
+	- Linux
+	- PDF
+	- Academic
 ---
 
 ## Abstract
 
-Pdf is generally an academic standard format, and I also use latex to organize my notes. The pdf reader is very important to me. After wasting a lot of time trying out PDF Readers in the market, I formed my own plan.
+PDF is generally an academic standard format, and I also use latex to organize my notes. The PDF Reader is very important to me. After wasting a lot of time trying out PDF Readers in the market, I formed my own formula.
 
 ## Requests
 
 My requests are not high:
-- Cross-platform (Linux & Android)
+	- Cross-platform (Linux & Android)
 	- Comments and highlights
 
-## PDF Readers I tried
+## the PDF Readers I tried
 
-### PC
+### PC-end
 
-#### X Change(Windows)
+#### X Change (Windows)
 
 	This is the PDF Reader I used in high school (used the win7 stealthy in the classroom, 
-			this win7 was basically like my personal computer 0.-) is a very good Reader, even if you don't not pay any, 
-	it provides a lot of Features. Although the toolbar is messy, it is very convenient to use after being familiar. 
+	this win7 was basically like my personal computer 0.-) is a very good Reader, even if you don't not pay any, 
+	it provides a lot of Features. 
+		Although the toolbar is messy, it is very convenient to use after being familiar. 
 	The fly in the ointment is that Linux is not supported.
 
-#### Evince(Linux)
+#### Evince (Linux)
 
 	Evince is simple.
 	But I got some unendurable bugs when when highlighting. 
 	I don’t know whether it is fixed now.
 
-#### Okular(linux)
+#### Okular (Linux)
 
-	Okular is a very mature **document** reader, with a variety of document formats support, is quite customizable.
-	A blog I browsed on the Internet said that Okular was 114M, and evince was only 11M. Indeed, this is also for users. those pdf heavy users could dislike Evince.
-	The main reason I choose kde is that Okualr and Goldendict are the most convenient pdf reader and dictionary I've ever use.
+	Okular is a very mature **document** reader, with a variety of document formats support, and is quite customizable.
+	[A blog][2] I ever browsed on the Internet said that Okular was 114M, and evince was only 11M. Indeed, this is also for users. those pdf heavy users might dislike Evince.
+	
+	The main reason I choose KDE is that Okualr and [Goldendict][3] are the most convenient pdf reader and dictionary I've ever use.
 
-#### Zathura
+#### Zathura (Linux)
 
 	I know a lot of moguls(大佬) use this, eh...but I've not. So, no use, no more mouths...
 
-#### Master PDF Editor(linux)
+#### Master PDF Editor (Linux)
 
-	The shortcuts were extremely inconvenient to set up at the time and it didn't a pleasant cooperation with Goldendict. 
-	The word-taking function is blocked.
+	The shortcuts were extremely inconvenient to set up at the time and it didn't have a pleasant cooperation with Goldendict:
+the word-taking function is blocked.
+	Commercial software, and too expensive as well as Mathematica, which could make you go die. 
+	And there is a very tasteless function: you can modify the pdf in a M$-Word way, but that will generated a pdf with a big watermark: "This PDF was built by Master PDF Editor". What if you don't like? **Pay** to eliminate the watermark...
 
-	Commercial software, and too expensive, which could make you go die. And there is a very tasteless function: you can modify the pdf like M$-Word, but that will generated a pdf with watermark, what if you don't like? **Pay** to eliminate the watermark...
+#### Foxit Reader (Linux) 
 
-#### Foxit Reader(Linux) 
-
-	After knowing that there is a praise in zhihu, I tried it. At that time (August 2018), It couldn't be full of screen,
-	and the shortcuts couldn't be customized. I will never trust zhihu anymore...
+	After knowing that there is praise in zhihu, I tried it. At that time (August 2018), It couldn't be full of screen,
+and the shortcuts couldn't be customized. I will never trust zhihu anymore...
 
 ### Android
 
-	Moon+ is a famous Reader on the Android platform.  
-	It supports a wide range of formats and equips with a high responding speed.
+	Moon+ is a famous Document Reader on the Android platform.  
+	It supports a wide range of formats and is equipped with a high responding speed.
 	It is said that the free version has some features of castration and advertising. 
 	~~However, there are various cracked versions on the Internet (such as 酷安).~~
 
-	If you are a "tuhao", please be sure not to make any excuse to support the author of Moon+.
+	Of course, if you don't have financial complications, or you are a "tuhao", please be sure not to make any excuse to support the author of Moon+.
 
 ### USB Disk
 
 #### Sumatra PDF 
 
-	You've finished a beamer, only to find your school computer only has Chrome to show your beamer. Installing this on the USB stick might be your good choice...
+	Imagine you've finished a beamer, only to find your school computer only has Chrome to present your beamer. What a pity!
+	Installing this on the USB stick might be your good choice so that your school sucking Windows could help you a better address...
 
 ## Cross-platform synchronization
 
@@ -83,13 +86,11 @@ My requests are not high:
 
 ### Dropbox
 
-	It is said that google drive is better, tightly integrated with google doc, and has a larger capacity.
-
-	But I just searched the dropbox firstly on the archlinux wiki and installed the official dropbox directly.
-
+	It is said that Google Drive is better, tightly integrated with Google Doc, and has a larger capacity.
+	But I just searched the Dropbox firstly on the archlinux wiki so installed the official dropbox directly.
 	If you don't have a dropbox account yet, why not click on my recommended link <https://db.tt/ihSbliC5mF>, so that both of us can get a 500M.
 
-	Install dropbox under Arch:
+	Install Dropbox on Arch:
 	```
 	yay -S dropbox
 	```
@@ -106,9 +107,9 @@ My requests are not high:
 
 ## Android dictionary
 
-	I currently using the 欧路 dictionary (commercial software). 
+	I currently using the [eudic][4] (commercial software). 
 	Goldendict also has Android version.
-	I use 欧路 firstly, which also supports a variety of formats. So I didn't have a switch.
+	I used eudic firstly, which also supports some formats. So I didn't make a switch.
 
 ## Postscript
 
@@ -120,8 +121,10 @@ My requests are not high:
 
 ### Reference
 	1. <https://blog.yuanbin.me/posts/2013-01/2013-01-31_23-07-00/>
-	2. <https://blog.csdn.net/u014015972/article/details/50659952>
-	3. <https://xuanwo.io/2015/12/23/best-pdf-read-solution/>
+	2. <https://xuanwo.io/2015/12/23/best-pdf-read-solution/>
+	[2]:(https://blog.csdn.net/u014015972/article/details/50659952)
+	[3]:(http://goldendict.org/)
+	[4]:(https://www.eudic.net/v4/en/app/download?#mobile)
 
 ## 摘要
 
@@ -162,8 +165,7 @@ My requests are not high:
 	* Master PDF Editor
 	快捷键当时设置起来极不方便
 	和goldendict结合使用并不方便,取词功能被屏蔽了
-
-	商业软件，付费贵的要死
+		商业软件，付费贵的要死
 	有个很鸡肋的功能：可以像word那样修改pdf，但是生成的pdf带水印，付费才能消除水印……
 
 	* Foxit Reader
@@ -178,7 +180,7 @@ My requests are not high:
 
 ### U盘
 	* Sumatra PDF
-	当你做好了beamer, 然而学校电脑却只有chrome能展示你的beamer的时候, 不妨在优盘上装个这个……
+		当你做好了beamer, 然而学校电脑却只有chrome能展示你的beamer的时候, 不妨在优盘上装个这个……
 
 
 ## 跨平台同步
