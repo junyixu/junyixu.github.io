@@ -46,7 +46,7 @@ I don’t know whether it is fixed now.
 Okular is a very mature **document** reader, with a variety of document formats support, and is quite customizable.
 [A blog][2] I ever browsed on the Internet said that Okular was 114M, and evince was only 11M. Indeed, this is also for users. those pdf heavy users might dislike Evince.
 
-The main reason I choose KDE is that Okualr and [Goldendict][3] are the most convenient pdf reader and dictionary I've ever use.
+The main reason why I choose KDE is that Okualr and [Goldendict][3] are the most convenient pdf reader and dictionary I've ever use.
 
 #### Zathura (Linux)
 
