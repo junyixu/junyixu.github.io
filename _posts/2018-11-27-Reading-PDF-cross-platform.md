@@ -73,12 +73,12 @@ It is said that the free version has some features of castration and advertising
 
 Of course, if you don't have financial complications, or you are a "tuhao", please be sure not to make any excuse to support the author of Moon+.
 
-### USB Disk
+### USB Drive
 
 #### Sumatra PDF 
 
 Imagine you've finished a beamer, only to find your school computer only has Chrome to present your beamer. What a pity!
-Installing this on the USB stick might be your good choice so that your school sucking Windows could help you a better address...
+Installing this on a USB Drive might be your good choice so that your school sucking Windows could help you with a better address...
 
 ## Cross-platform synchronization
 
