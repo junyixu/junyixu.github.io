@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      使用 xmodmap 交换 Esc 和 Caps Lock 按键
-subtitle:   Map-caps_lock-to-escape-in-XWindows.md
+subtitle:   Map-caps_lock-to-escape-in-XWindows
 date:       2019-02-22
 author:     Junix
 header-img: img/post-bg-coffee.jpeg
@@ -15,7 +15,11 @@ tags:
 ### 折腾的环境和适用人群
 环境是 ArchLinux 和 Xorg
 
-以及 交换 Esc 和 Caps Lock 按键 对 vim user 来说十分重要
+以及 交换 Esc 和 Caps Lock 按键 对 vim user 来说十分重要：
+
+Ctrl 键我是用小指和手掌相连的那块软肉按的，
+
+但是 Esc 键实在太远
 
 个人觉得 ohmyzsh+tmux+vim 及其各种插件效率非常高
 [我的 dot 文件](https://github.com/junyixu/dotfiles)
