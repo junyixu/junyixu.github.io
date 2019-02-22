@@ -1,5 +1,17 @@
-## 使用 xmodmap 交换 Esc 和 Caps Lock 按键
-
+---
+layout:     post
+title:      使用 xmodmap 交换 Esc 和 Caps Lock 按键
+subtitle:   Map-caps_lock-to-escape-in-XWindows.md
+date:       2019-02-22
+author:     Junix
+header-img: img/post-bg-coffee.jpeg
+catalog: true
+tags:
+- Linux
+- vim
+- Xorg
+- XWindows
+---
 ### 折腾的环境和适用人群
 环境是 ArchLinux 和 Xorg
 
