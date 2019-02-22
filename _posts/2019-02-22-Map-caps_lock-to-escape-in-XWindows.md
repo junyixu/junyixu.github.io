@@ -103,11 +103,10 @@ xmodmap -pke > ~/.Xmodmap
 后直接把`9`和`66`互换，
 `xmodmap ~/.Xmodmap` 后失败
 
-【注】: `Escape` 和 `Caps_Lock` 具体的 keycode 是不是 9 和 66 可能会根据你的键盘而有
-所不同
+现象是没有消除 `Lock` 键，按 `Caps_Lock` 键后同时表现 `Escape`和“大小写锁定”
 
-现象是没有消除 `Lock` 键
-按 `Caps_Lock` 后同时表现 `Escape`和“大小写锁定”的现象
+【注】: `Escape` 和 `Caps_Lock` 具体的 keycode 究竟是不是 9 和 66 可能会根据你的键盘而有
+所不同
 
 ### 方案 C
 思索再三，最终方案是这样的
