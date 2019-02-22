@@ -103,5 +103,13 @@ friends: [
     {
         title: "惠狐之书",
         href: "https://blog.megumifox.com"
+    },
+    {
+        title: "YueLing's Blog",
+        href: "https://blog.csdn.net/cfarmerreally"
+    },
+    {
+        title: "焱落冰寒的博客",
+        href: "http://www.iceplosion.xyz/"
     }
 ]
