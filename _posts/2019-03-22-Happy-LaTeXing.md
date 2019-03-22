@@ -72,7 +72,7 @@ install-tl 脚本。
 则在vim配置文件中写入
 
 ```
-let g:templates_directory = '/home/pylego/.vim/templates'
+let g:templates_directory = '$HOME/.vim/templates'
 ```
 文件的命名模式是"=template=<pattern>"  
 如我的 [templates 文件夹](https://github.com/junyixu/dotfiles/tree/master/vim/templates)
@@ -100,7 +100,7 @@ vimtex 的常见快捷键
 你还需要代码块集合
 
 前人栽树后人乘凉，我们可以下载别人写好的代码块集合 如 [honza/vim-snippets](https://github.com/honza/vim-snippets)
-当然，我们可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块集合作为补充。  
+当然，也可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块集合作为补充。  
 如不嫌弃，可以看看[我的UltiSnips目录](https://github.com/junyixu/dotfiles/tree/master/vim)
 
 #### [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
@@ -109,16 +109,17 @@ vimtex 的常见快捷键
 ```
 let g:livepreview_previewer = 'okular'
 ```
-使用 vim 编辑 .tex时 使用`:LLPStartPreview`即可打开预览
+使用 vim 编辑 .tex时 输入`:LLPStartPreview`即可打开预览
 
 #### YCM
-由于我同时使用 YCM 和 Ultisnips 造成了 tab 键冲突
-，参考这篇文章解决了 YCM 和 Ultisnips 使用 tab 键的冲突
-	  <https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme>
+
+我参考[这篇文章](https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme)
+解决了同时使用 YCM 和 Ultisnips 造成的 tab 键冲突
+
 如果您有更好的办法恳请您不吝赐教
 
 ### [mathpix](https://mathpix.com/)
-原本 archlinuxcn 源上是有的  `/(ㄒoㄒ)/~~)`  
+原本 archlinuxcn 源上是有 mathpix 的  `/(ㄒoㄒ)/~~)`  
 后来由于没有协议，认为不能分发  
 无奈，从 aur 上下载安装吧
 	  
