@@ -103,6 +103,11 @@ vimtex 的常见快捷键
 当然，也可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块集合作为补充。  
 如不嫌弃，可以看看[我的UltiSnips目录](https://github.com/junyixu/dotfiles/tree/master/vim)
 
+之后我们就可以愉快地输入`b<tab>`
+补全
+再按
+`tab` 或者`<ctrl-J>`跳转到下一个
+
 #### [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
 这个插件起到了即时预览的作用。
 配置好你的 pdf 浏览器 比如这里我用 okular
