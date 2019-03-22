@@ -69,13 +69,13 @@ install-tl 脚本。
 如用 vim 直接创建一个 .c 结尾的文件就会出现 c文件的模版
 
 当然你可以创建自己的模版文件  
-则在vim配置文件中写入
+在vim配置文件中写入
 
 ```
 let g:templates_directory = '$HOME/.vim/templates'
 ```
 文件的命名模式是"=template=<pattern>"  
-如我的 [templates 文件夹](https://github.com/junyixu/dotfiles/tree/master/vim/templates)
+如如[我的templates 文件夹](https://github.com/junyixu/dotfiles/tree/master/vim/templates)
 
 
 #### [vimtex](https://github.com/lervag/vimtex)
