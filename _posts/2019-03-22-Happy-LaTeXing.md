@@ -16,7 +16,7 @@ tags:
 ## 摘要
 这是一篇我在 ArchLinux 下 ~~clone 别人的模版后~~ 用 vim 流畅地 LaTeXing 的小记
 
-![效果图](../img/latexing.gif)
+![效果图](/img/latexing.gif)
 
 ## 这或许是个系列
 
