@@ -98,12 +98,13 @@ vimtex 的常见快捷键
 这只是个代码块引擎
 
 你还需要代码块集合
+
 前人栽树后人乘凉，我们可以下载别人写好的代码块集合 如 [honza/vim-snippets](https://github.com/honza/vim-snippets)
-当然，我们可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块集合作为补充
+当然，我们可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块集合作为补充。  
 如不嫌弃，可以看看[我的UltiSnips目录](https://github.com/junyixu/dotfiles/tree/master/vim)
 
 #### [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
-这个插件起到了即时预览的作用
+这个插件起到了即时预览的作用。
 配置好你的 pdf 浏览器 比如这里我用 okular
 ```
 let g:livepreview_previewer = 'okular'
