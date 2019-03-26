@@ -2,7 +2,7 @@
 layout:     post
 title:      在 ArchLinux 上愉快地 LaTeXing
 subtitle:   Happy LaTeXing
-date:       2019-02-22
+date:       2019-03-22
 author:     Junix
 header-img: img/post-bg-unix-linux.jpg
 catalog: true
@@ -14,7 +14,8 @@ tags:
 ---
 
 ## 摘要
-这是一篇我在 ArchLinux 下 ~~clone 别人的模版后~~ 用 vim 流畅地 LaTeXing 的小记
+这是一篇我在 ArchLinux 下 ~~clone 别人的模版后~~ 用 vim 流畅地用 LaTeX 记笔记的
+小记
 
 ![效果图](/img/latexing.gif)
 
