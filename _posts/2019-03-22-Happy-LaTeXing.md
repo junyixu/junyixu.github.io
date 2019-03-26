@@ -24,14 +24,14 @@ tags:
 我的知识管理体系太乱了，记笔记或者 todolist 大致有这么几个地方
 
 #### 纸质:
-* [ ] 存放 4A纸的文件夹 和 使用彩色标签标记的活页笔记本
+* [ ] 存放 A4 纸的文件夹 和 使用彩色标签标记的活页笔记本
 #### 电子:
 * [ ] vimwiki 
 * [ ] 滴答清单
 * [ ] anki
 * [ ] 印象笔记: 用来网页剪藏
 * [ ] simplenote
-* [ ] pocket, Liner 以及 firefox 的书签
+* [ ] pocket, Liner(火狐插件) 以及火狐书签
 * [ ] LaTeX: 主要用来整理公式多的笔记
 
 ## 用料
@@ -50,8 +50,8 @@ tags:
 install-tl 脚本。
 
 #### 方法二
-使用源上的 texlive
-
+使用源上的 texlive  
+(非 Arch 用户请使用方法一安装，以使用最新版本)
 ##### 优点
 * 统一管理
 * 方便快捷: 对照着 ArchLinux Wiki 直接用 pacman 安装所需的包即可，参考
@@ -75,14 +75,15 @@ install-tl 脚本。
 let g:templates_directory = '$HOME/.vim/templates'
 ```
 文件的命名模式是"=template=<pattern>"  
-如如[我的templates 文件夹](https://github.com/junyixu/dotfiles/tree/master/vim/templates)
+如:
+[我的templates文件夹](https://github.com/junyixu/dotfiles/tree/master/vim/templates)
 
 
 #### [vimtex](https://github.com/lervag/vimtex)
-很多人使用 vim-latex 
-我个人并不推荐 vim-latex 而是推荐使用 vimtex 搭配 Ultisnips
+很多人使用 vim-latex, 我个人并不推荐。  
+而是推荐使用 vimtex 搭配 Ultisnips
 
-vimtex 的常见快捷键
+vimtex 轻量且功能强大，这里只列举几个快捷键(以后有时间再补充)
 * 普通模式下
 	- 使用`dsc`/`dse`/`ds$`/`dsd` 删除周围的命令(command)，环境(environment)，计数器(delimiter)
 	- 使用`csc`/`cse`/`cs$`/`csd` 修改周围的命令(command)，环境(environment)，计数器(delimiter)
@@ -95,12 +96,11 @@ vimtex 的常见快捷键
 	* 使用 `]]` 关闭 当前环境或计数器, 如: 在末尾添加`end{your environment}`
 
 #### [Ultisnip](https://github.com/SirVer/ultisnips)
-这只是个代码块引擎
+这只是个代码块引擎  
+你还需要代码块合集
 
-你还需要代码块集合
-
-前人栽树后人乘凉，我们可以下载别人写好的代码块集合 如 [honza/vim-snippets](https://github.com/honza/vim-snippets)
-当然，也可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块集合作为补充。  
+前人栽树后人乘凉，我们可以下载别人写好的代码块合集 如 [honza/vim-snippets](https://github.com/honza/vim-snippets)
+当然，也可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块合集作为补充。  
 如不嫌弃，可以看看[我的UltiSnips目录](https://github.com/junyixu/dotfiles/tree/master/vim)
 
 之后我们就可以愉快地输入`b<tab>`
@@ -114,7 +114,10 @@ vimtex 的常见快捷键
 ```
 let g:livepreview_previewer = 'okular'
 ```
-使用 vim 编辑 .tex时 输入`:LLPStartPreview`即可打开预览
+使用 vim 编辑 .tex时 输入`:LLPStartPreview`即可打开预览  
+~~然而，vim 用户真的会打这么长的命令吗，当然是 map 一下啦~~
+
+查看`vimtex`的手册，它似乎自带预览命令，不过我没理解怎么使用。
 
 #### YCM
 
