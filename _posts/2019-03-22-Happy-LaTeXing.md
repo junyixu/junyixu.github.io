@@ -77,7 +77,7 @@ let g:templates_directory = '$HOME/.vim/templates'
 ```
 文件的命名模式是"=template=<pattern>"  
 如:
-[我的templates文件夹](https://github.com/junyixu/dotfiles/tree/master/vim/templates)
+我的[templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
 
 
 #### [vimtex](https://github.com/lervag/vimtex)
@@ -111,7 +111,7 @@ vimtex 轻量且功能强大，这里只列举几个快捷键(以后有时间再
 
 #### [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
 这个插件起到了即时预览的作用。
-配置好你的 pdf 浏览器 比如这里我用 okular
+配置好你的 pdf 阅读器 比如这里我用 okular
 ```
 let g:livepreview_previewer = 'okular'
 ```
