@@ -25,7 +25,7 @@ tags:
 去年[惠狐姐姐买了Wacom Bamboo Slate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/)…
 ~~Hmmm, 我考完试没写（逃~~
 
-![评论](/img/latex2)
+![评论](/img/latex2.png)
 
 我的知识管理体系太乱了，记笔记或者 todolist 大致有这么几个地方
 
