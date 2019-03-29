@@ -76,8 +76,8 @@ install-tl 脚本。
 let g:templates_directory = '$HOME/.vim/templates'
 ```
 文件的命名模式是"=template=<pattern>"  
-如:
-我的[templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
+如:我的 
+[templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
 
 
 #### [vimtex](https://github.com/lervag/vimtex)
@@ -133,11 +133,12 @@ let g:livepreview_previewer = 'okular'
 无奈，从 aur 上下载安装吧
 	  
 ## 参考
-<http://mednoter.com/UltiSnips.html>
+<http://mednoter.com/UltiSnips.html>  
 <https://segmentfault.com/a/1190000006036434>
 
 
 ## 后记
 这个世界啊...在我写好这篇博客的数天后，偶然发现国外一篇用 vim LaTeXing 的博客，
-而且这位几乎把 代码块 用到了炉火纯青的境界， 我这篇相形见绌，这里推荐下
+而且这位几乎把 代码块 用到了炉火纯青的境界， 我这篇相形见绌了。
+这里推荐下
 <https://castel.dev/post/lecture-notes-1/>
