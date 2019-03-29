@@ -21,7 +21,12 @@ tags:
 
 ## 这或许是个系列
 
-灵感来自于 萌狼姐姐的 [知识管理ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html)  
+灵感来自于 萌狼姐姐的 [知识管理ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html)    
+去年[惠狐姐姐买了Wacom Bamboo Slate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/)…
+~~Hmmm, 我考完试没写（逃~~
+
+![评论](/img/latex2)
+
 我的知识管理体系太乱了，记笔记或者 todolist 大致有这么几个地方
 
 #### 纸质:
