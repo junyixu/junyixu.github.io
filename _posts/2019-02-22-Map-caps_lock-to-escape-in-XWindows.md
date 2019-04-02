@@ -21,15 +21,14 @@ Ctrl 键我是用小指和手掌相连的那块软肉按的，但是 Esc 键实�
 <C-[> 去实现退出，但对我而言，`Caps Lock`对我而言是最不常用的按键并且最好按的键
 。
 
-以及 ohmyzsh+tmux+vim 及其各种插件 大大提升了我在命令行下的效率。若你不知道 `zsh` 和 `tmux` 为
-何物。
-这里推荐一下[程序员内功篇](https://xiaozhou.net/learn-the-command-line-preface-2017-05-12.html)
+以及 ohmyzsh+tmux+vim 及其各种插件 大大提升了我在命令行下的效率。什么？你还不知道 `zsh` 和 `tmux` 为
+何物？Hmmm, 这里推荐一下[程序员内功篇](https://xiaozhou.net/learn-the-command-line-preface-2017-05-12.html)
 ### 方案 A
 看系统按键映射可以输入：
 Shell 代码
 
 ```
-    xmodmap -pke
+xmodmap -pke
 ```
 
 要交换 Esc 和 Caps Lock 按键，输入命令：```xmodmap -```，然后再输入：
@@ -37,10 +36,10 @@ Shell 代码
 Shell 代码
 
 ```
-	remove Lock = Caps_Lock
-    keysym Caps_Lock = Escape
-    keysym Escape = Caps_Lock
-    add Lock = Caps_Lock
+remove Lock = Caps_Lock
+keysym Caps_Lock = Escape
+keysym Escape = Caps_Lock
+add Lock = Caps_Lock
 ```
 
 这里解释一下：
@@ -122,7 +121,7 @@ add Lock = Caps_Lock
 
 好了，再次**挂起**或**休眠**试试吧，好了，祝贺你，愉快地享受 `ESC` 键吧！
 
-#### 到此文章结束
+#### 文章到此结束
 
 ### 还不行？
 若你遇到玄学问题，仍然概率性地失效。Hmmm，
