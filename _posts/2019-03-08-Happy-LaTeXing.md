@@ -107,7 +107,7 @@ vimtex 轻量且功能强大，这里只列举几个快捷键(以后有时间再
 
 前人栽树后人乘凉，我们可以下载别人写好的代码块合集 如 [honza/vim-snippets](https://github.com/honza/vim-snippets)
 当然，也可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块合集作为补充。  
-如不嫌弃，可以看看[我的UltiSnips目录](https://github.com/junyixu/dotfiles/tree/master/vim)
+如不嫌弃，可以看看[我的UltiSnips目录](https://github.com/junyixu/dotfiles/blob/master/vim/UltiSnips/tex.snippets)
 
 之后我们就可以愉快地输入`b<tab>`
 补全
@@ -125,7 +125,7 @@ let g:livepreview_previewer = 'okular'
 
 查看`vimtex`的手册，它似乎自带预览命令，不过我没理解怎么使用。
 
-#### YCM
+#### You Complete Me
 
 我参考[这篇文章](https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme)
 解决了同时使用 YCM 和 Ultisnips 造成的 tab 键冲突
@@ -143,7 +143,8 @@ let g:livepreview_previewer = 'okular'
 
 
 ## 后记
-这个世界啊...在我写好这篇博客的数天后，偶然发现国外一篇用 vim LaTeXing 的博客，
-而且这位几乎把 代码块 用到了炉火纯青的境界， 我这篇相形见绌了。
-这里推荐下
+这个世界啊...在我写好这篇博客的数天后，偶然发现国外一篇用 vim 来 LaTeXing 的博
+文，
+而且这位几乎把 代码块 用到了炉火纯青的境界，我这篇相形见绌了。
+这里推荐下：
 <https://castel.dev/post/lecture-notes-1/>
