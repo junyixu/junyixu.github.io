@@ -18,10 +18,10 @@ tags:
 Ctrl 键我是用小指和手掌相连的那块软肉按的，但是 Esc 键实在太远……
 
 快速地进入普通模式 对 vim user 来说十分重要；当然，方法不唯一，我知道有人使用
-<C-[> 去实现退出，但对我而言，`Caps Lock`对我而言是最不常用的按键并且最好按的键
+<C-[> 去实现 `Escape`，但对我而言，`Caps Lock`是最不常用的按键并且最好按的键
 。
 
-以及 ohmyzsh+tmux+vim 及其各种插件 大大提升了我在命令行下的效率。什么？你还不知道 `zsh` 和 `tmux` 为
+以及 oh-my-zsh + tmux + vim及其各种插件 大大提升了我在命令行下的效率。什么？？？你居然还不知道 `zsh` 和 `tmux` 为
 何物？Hmmm, 这里推荐一下[程序员内功篇](https://xiaozhou.net/learn-the-command-line-preface-2017-05-12.html)
 ### 方案 A
 在查看系统按键映射可以在终端下输入：`xmodmap -pke`
@@ -61,7 +61,7 @@ xmodmap ~/.Xmodmap
 ```
 即可。
 
-若你不需要休眠或挂起，**看到这里就可以了**。
+若你不需要挂起或休眠，**看到这里就可以了**。
 
 【注】 startx 会在启动时按 /etc/X11/xinit/xinitrc 的要求去找 ~/.Xmodmap 这个文件
 。  
