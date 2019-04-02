@@ -201,7 +201,7 @@ Moon+ 静读天下，安卓平台上首屈一指的阅读器，支持格式众�
 
 若你还没有 dropbox 账号，不妨点击我的推荐链接<https://db.tt/ihSbliC5mF>，这样我们都能得到 500M
 
-Arch 下安装 dropbox：
+[Arch](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html) 下安装 dropbox：
 ```
 yay -S dropbox
 ```

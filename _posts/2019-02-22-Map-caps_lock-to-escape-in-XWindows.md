@@ -13,7 +13,7 @@ tags:
 - XWindows
 ---
 ### 适用环境和人群
-测试环境是 ArchLinux 和 Xorg 
+测试环境是 [ArchLinux](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html) 和 Xorg 
 
 Ctrl 键我是用小指和手掌相连的那块软肉按的，但是 Esc 键实在太远……
 
