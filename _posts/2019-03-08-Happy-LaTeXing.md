@@ -17,11 +17,11 @@ tags:
 这是一篇我在 ArchLinux 下 ~~clone 别人的模版后~~ 用 vim 流畅地用 LaTeX 记笔记的
 小记。自从用了 latex 之后再也不想回 word 了：
 * [LaTeX 是内容与样式分离的](https://liam.page/2019/03/18/separation-of-content-and-presentation/)
-* 再也不要打开 word 等数秒钟啦，只要在终端输入 vim *.tex 后瞬间 template 就位，
+* 再也不要打开 word 等数秒钟啦，只要在终端输入 gvim(或vim或nvim) *.tex 后瞬间 template 就位，
   甚至光标也处于对应位置，你要做的只是所思即所得
 * 公式体验好，Ultisnips 加成，平均速度几乎可以和手写一样
 
-![效果图](/img/latexing.gif)
+![效果图](/img/latex3.gif)
 
 ## 这或许是个系列
 
