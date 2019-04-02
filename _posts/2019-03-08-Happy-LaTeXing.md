@@ -42,6 +42,7 @@ tags:
 * [ ] anki
 * [ ] 印象笔记: 用来网页剪藏
 * [ ] simplenote
+* [ ] inoreader
 * [ ] pocket, Liner(火狐插件) 以及火狐书签
 * [ ] LaTeX: 主要用来整理公式多的笔记
 
