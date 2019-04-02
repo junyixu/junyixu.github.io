@@ -24,16 +24,9 @@ Ctrl 键我是用小指和手掌相连的那块软肉按的，但是 Esc 键实�
 以及 ohmyzsh+tmux+vim 及其各种插件 大大提升了我在命令行下的效率。什么？你还不知道 `zsh` 和 `tmux` 为
 何物？Hmmm, 这里推荐一下[程序员内功篇](https://xiaozhou.net/learn-the-command-line-preface-2017-05-12.html)
 ### 方案 A
-看系统按键映射可以输入：
-Shell 代码
-
-```
-xmodmap -pke
-```
+在查看系统按键映射可以在终端下输入：`xmodmap -pke`
 
 要交换 Esc 和 Caps Lock 按键，输入命令：```xmodmap -```，然后再输入：
-
-Shell 代码
 
 ```
 remove Lock = Caps_Lock
