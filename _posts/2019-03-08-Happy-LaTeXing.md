@@ -15,15 +15,19 @@ tags:
 
 ## 摘要
 这是一篇我在 ArchLinux 下 ~~clone 别人的模版后~~ 用 vim 流畅地用 LaTeX 记笔记的
-小记
+小记。自从用了 latex 之后再也不想回 word 了：
+* [LaTeX 是内容与样式分离的](https://liam.page/2019/03/18/separation-of-content-and-presentation/)
+* 再也不要打开 word 等数秒钟啦，只要在终端输入 vim *.tex 后瞬间 template 就位，
+  甚至光标也处于对应位置，你要做的只是所思即所得
+* 公式体验好，Ultisnips 加成，平均速度几乎可以和手写一样
 
 ![效果图](/img/latexing.gif)
 
 ## 这或许是个系列
 
 灵感来自于 萌狼姐姐的 [知识管理ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html)    
-去年[惠狐姐姐买了Wacom Bamboo Slate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/)…
-~~Hmmm, 我考完试没写（逃~~
+去年，[惠狐姐姐买了Wacom Bamboo Slate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/)…
+~~Hmmm, 考完试忘写了（逃~~
 
 ![评论](/img/latex2.png)
 
@@ -31,6 +35,7 @@ tags:
 
 #### 纸质:
 * [ ] 存放 A4 纸的文件夹 和 使用彩色标签标记的活页笔记本
+
 #### 电子:
 * [ ] vimwiki 
 * [ ] 滴答清单
@@ -50,6 +55,7 @@ tags:
 * [mathpix](https://mathpix.com/)
 
 ### 安装 texlive
+
 #### 方法一
 查阅 `texlive-zh-cn`
 使用 Unix installer 安装: 可使用国内大学的开源镜像站，wget 下载 install-tl，执行
@@ -58,6 +64,7 @@ install-tl 脚本。
 #### 方法二
 使用源上的 texlive  
 (非 Arch 用户请使用方法一安装，以使用最新版本)
+
 ##### 优点
 * 统一管理
 * 方便快捷: 对照着 ArchLinux Wiki 直接用 pacman 安装所需的包即可，参考
@@ -82,12 +89,14 @@ let g:templates_directory = '$HOME/.vim/templates'
 ```
 文件的命名模式是"=template=<pattern>"  
 如:我的 
+
 [templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
 
 
 #### [vimtex](https://github.com/lervag/vimtex)
-很多人使用 vim-latex, 我个人并不推荐。  
-而是推荐使用 vimtex 搭配 Ultisnips
+我曾 google "vim latex"，一堆使用 vim-latex 的文章。 我个人并不推荐。  
+而是主张使用 vimtex README 上所推荐的：**vimtex 搭配 Ultisnips**.
+
 
 vimtex 轻量且功能强大，这里只列举几个快捷键(以后有时间再补充)
 * 普通模式下
