@@ -12,17 +12,18 @@ tags:
 - Xorg
 - XWindows
 ---
-### 折腾的环境和适用人群
-环境是 ArchLinux 和 Xorg
+### 适用环境和人群
+测试环境是 ArchLinux 和 Xorg 
 
-以及 交换 Esc 和 Caps Lock 按键 对 vim user 来说十分重要：
+Ctrl 键我是用小指和手掌相连的那块软肉按的，但是 Esc 键实在太远……
 
-Ctrl 键我是用小指和手掌相连的那块软肉按的，
+快速地进入普通模式 对 vim user 来说十分重要；当然，方法不唯一，我知道有人使用
+<C-[> 去实现退出，但对我而言，`Caps Lock`对我而言是最不常用的按键并且最好按的键
+。
 
-但是 Esc 键实在太远
-
-个人觉得 ohmyzsh+tmux+vim 及其各种插件效率非常高
-[我的 dot 文件](https://github.com/junyixu/dotfiles)
+以及 ohmyzsh+tmux+vim 及其各种插件 大大提升了我在命令行下的效率，若你不知道 `zsh` 和 `tmux` 为
+何物。  
+这里推荐一下[程序员内功篇](https://xiaozhou.net/learn-the-command-line-tmux-2018-04-27.html)
 ### 方案 A
 看系统按键映射可以输入：
 Shell 代码
@@ -36,83 +37,72 @@ Shell 代码
 Shell 代码
 
 ```
-	clear Lock
+	remove Lock = Caps_Lock
     keysym Caps_Lock = Escape
     keysym Escape = Caps_Lock
     add Lock = Caps_Lock
 ```
 
-第一行清除`CapsLock`的 Modifier 映射，第二行和第三行交换`Escape`和`Caps_Lock`的映射，最后一行加上对`CapsLock`的 Modifier 映射。
+这里解释一下：
+* 第一行清除`CapsLock`的 Modifier 映射 （或者你用 `clear Lock` 替代 `remove Lock
+  = Caps_Lock` 效果是一样的)
+* 第二行和第三行交换`Escape`和`Caps_Lock`的映射
+* 最后一行加上对`CapsLock`的 Modifier 映射。
 
-这样`Esc`就完成大写锁定的功能，而```CapsLock```则完成```Esc```的功能。但这种改变在电脑重启后失效了，为了让改变永久生效，将上述输入保存在文件```$HOME/.Xmodmap```下。
-```
-xmodmap ~/.Xmodmap
-```
+这样`Esc`就完成大写锁定的功能，而```CapsLock```则完成```Esc```的功能。  
+大功告成！！！接下来将上述代码写入配置文件```$HOME/.Xmodmap```里。
 
 
-【注】 X 会在启动时按 /etc/X11/xinit/xinitrc 的要求去找 ~/.Xmodmap 这个文件
-参考：[arch 关于 xmodmap 的 wiki](https://wiki.archlinux.org/index.php/Xmodmap)
-
-以上就是我的方案 A：
-在`~/.Xmodmap`写入
+即: `vim ~/.Xmodmap` 写入
 
 ```
 ! 方案 A
-clear Lock
+remove Lock = Caps_Lock
 keysym Caps_Lock = Escape
 keysym Escape = Caps_Lock
 add Lock = Caps_Lock
 ```
-是的，方案 A 失败了……
+保存并退出  
+然后执行
+```
+xmodmap ~/.Xmodmap
+```
+即可。
 
-我不明白失败的原因，现象是在我挂起或者休眠后在开启电脑时就会失效
+若你不需要休眠或挂起，**看到这里就可以了**。
 
-然后，我尝试去`xmodmap ~/.Xmodmap`会报错：
-第一个错误是
+【注】 startx 会在启动时按 /etc/X11/xinit/xinitrc 的要求去找 ~/.Xmodmap 这个文件
+。  
+详情请参考：[ArchLinuxWiki](https://wiki.archlinux.org/index.php/Xmodmap)
+
+
+这个方法**挂起**或**休眠**后再开启电脑时就会失效，此时，若你去尝试去`xmodmap ~/.Xmodmap`会报错,
+大致像这样子：
+* 第一个错误是
 
 ```
 xmodmap:  /home/junyi/.Xmodmap:16:  bad keysym in remove modifier list
 'Caps_Lock', no corresponding keycodes
 xmodmap:  1 error encountered, aborting.
 ```
-第二个错误说 Caps_Lock 与 Escape 找不到之类
+* 第二个错误说 `Caps_Lock` 与 `Escape` 找不到之类
 
-### 方案 B
-我在 [vim 论坛](http://vim.wikia.com/wiki/Map_caps_lock_to_escape_in_XWindows) 上找到了方案 B
+### 方案 A pro
 
-```
-! 方案 B
-!remove Lock = Caps_Lock
-!keysym Escape = Caps_Lock
-!keysym Caps_Lock = Escape
-!add Lock = Caps_Lock
-```
-
-挂起或休眠后还是失效，
-`xmodmap ~/.Xmodmap` 后的报错也是一样的
-可见`clear Lock`和`remove Lock = Caps_Lock`的效果是一样的
-
-推测可能是 `Escape`和`Caps_Lock`交换时的问题
-我决定使用`keycode`直接赋值
-
-### 使用 keycode
 通过
 ```
 xmodmap -pke > ~/.Xmodmap
 ```
-后直接把`9`和`66`互换，
-`xmodmap ~/.Xmodmap` 后失败
+你会得到一张键位映射表。  
 
-现象是没有消除 `Lock` 键，按 `Caps_Lock` 键后同时表现 `Escape`和“大小写锁定”
+你也许会想把`Escape` 和 `Caps_Lock` 对应的数字互换  
+比如在我的机器上，这两个键分别对应 9 和 66,  
+(**注意** `Escape` 和 `Caps_Lock` 具体的 `keycode` 究竟是不是 9 和 66 可能会根据你的键盘而有所不同。)  
+这样做是不行的，因为没有消除 `Lock` 键：按 `Caps_Lock` 键后同时表现 `Escape`和“大小写锁定”
 
-【注】: `Escape` 和 `Caps_Lock` 具体的 keycode 究竟是不是 9 和 66 可能会根据你的键盘而有
-所不同
-
-### 方案 C
-思索再三，最终方案是这样的
-我删除了
-`~/.Xmodmap`
+少年，请找到属于你的 `keycode`，然后执行
 ```
+rm ~/.Xmodmap  #删除刚才的表
 vim ~/.Xmodmap
 ```
 写入下面这些代码
@@ -124,23 +114,30 @@ keycode  9 = Caps_Lock NoSymbol Caps_Lock
 keycode  66 = Escape NoSymbol Escape
 add Lock = Caps_Lock
 ```
+保存并退出(**请把9 和 66 换成你的数字**)
 
-挂起和休眠后还是会出现错误
-这次表现为
-键盘上的`Escape`和`Caps_Lock`同时表现`Escape`的效果
-然后
+最后执行  
 `xmodmap ~/.Xmodmap`
 
 
-这次只出现一条错误
-即
+好了，再次**挂起**或**休眠**试试吧，好了，祝贺你，愉快地享受 `ESC` 键吧！
 
+#### 到此文章结束
+
+### 还不行？
+若你遇到玄学问题，仍然概率性地失效。Hmmm，
+请执行
 ```
-xmodmap:  /home/junyi/.Xmodmap:16:  bad keysym in remove modifier list
+xmodmap ~/.Xmodmap
+```
+
+若出现如下错误:
+```
+xmodmap:  $HOME/.Xmodmap:16:  bad keysym in remove modifier list
 'Caps_Lock', no corresponding keycodes
 xmodmap:  1 error encountered, aborting.
 ```
-我把
+把
 ```
 remove Lock = Caps_Lock
 ```
@@ -151,22 +148,7 @@ remove Lock = Caps_Lock
 ```
 再次
 
-`xmodmap ~/.Xmodmap`
-恢复正常
+`xmodmap ~/.Xmodmap` 
 
-## 总结
-```
-! 方案 C
-remove Lock = Caps_Lock
-keycode  9 = Caps_Lock NoSymbol Caps_Lock
-keycode  66 = Escape NoSymbol Escape
-add Lock = Caps_Lock
-```
-是目前最好的方案了
-休眠或挂起之后只需要把
-```
-remove Lock = Caps_Lock
-```
-注释后再
-`xmodmap ~/.Xmodmap`
-就可以了
+## 参考
+<http://vim.wikia.com/wiki/Map_caps_lock_to_escape_in_XWindows>
