@@ -21,8 +21,8 @@ Ctrl 键我是用小指和手掌相连的那块软肉按的，但是 Esc 键实�
 <C-[> 去实现退出，但对我而言，`Caps Lock`对我而言是最不常用的按键并且最好按的键
 。
 
-以及 ohmyzsh+tmux+vim 及其各种插件 大大提升了我在命令行下的效率，若你不知道 `zsh` 和 `tmux` 为
-何物。  
+以及 ohmyzsh+tmux+vim 及其各种插件 大大提升了我在命令行下的效率。若你不知道 `zsh` 和 `tmux` 为
+何物。
 这里推荐一下[程序员内功篇](https://xiaozhou.net/learn-the-command-line-preface-2017-05-12.html)
 ### 方案 A
 看系统按键映射可以输入：
