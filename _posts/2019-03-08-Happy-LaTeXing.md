@@ -14,8 +14,9 @@ tags:
 ---
 
 ## 摘要
-这是一篇我在 [ArchLinux](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html) 下 ~~clone 别人的模版后~~ 用 vim 流畅地记笔记的
-小记。自从用了 LaTeX （雷太赫） 之后再也不想回 M$ Word 了：
+这是一篇我在
+[ArchLinux](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html)
+下 ~~clone 别人的模版后~~ 用 vim 流畅地整理笔记的小记。自从用了 LaTeX （雷太赫） 之后再也不想回 M$ Word 了：
 * [LaTeX 是内容与样式分离的](https://liam.page/2019/03/18/separation-of-content-and-presentation/)
 * 再也不要打开 Word 等数秒钟啦，只要在终端输入 gvim(或vim或nvim) *.tex 后瞬间 template 就位，
   甚至光标也处于对应位置，你要做的只是所思即所得
@@ -23,14 +24,9 @@ tags:
 
 ![效果图](/img/latex3.gif)
 
-## 这或许是个系列
+## 或许是个系列
 
 灵感来自于 萌狼姐姐的 [知识管理ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html)    
-去年，[惠狐姐姐买了Wacom Bamboo Slate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/)…
-~~Hmmm, 考完试忘写了（逃~~
-
-![评论](/img/latex2.png)
-
 我的知识管理体系太乱了，记笔记或者 todolist 大致有这么几个地方
 
 #### 纸质:
@@ -40,11 +36,20 @@ tags:
 * [ ] vimwiki 
 * [ ] 滴答清单
 * [ ] anki
-* [ ] 印象笔记: 用来网页剪藏
+* [ ] 印象笔记: 只是用来网页剪藏`~~~~(>_<)~~~~)`若你有什么网页剪藏的好软件请告诉我
 * [ ] simplenote
 * [ ] inoreader
 * [ ] pocket, Liner(火狐插件) 以及火狐书签
-* [ ] LaTeX: 主要用来整理公式多的笔记
+* [X] LaTeX: 主要用来整理公式多的笔记
+
+为什么要用 LaTeX 整理笔记呢，当然是因为没有惠狐姐姐那么清秀的字迹啦。  
+时间长了我自己都不认识我当时在写什么了……
+![字迹](/img/ugly.jpg)
+
+[惠狐姐姐的 Wacom Bamboo Slate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/)…
+~~Hmmm, 考完试忘写了（逃~~
+
+![评论](/img/latex2.png)
 
 ## 用料
 * texlive
