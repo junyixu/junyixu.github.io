@@ -45,7 +45,7 @@ add Lock = Caps_Lock
 大功告成！！！接下来将上述代码写入配置文件```$HOME/.Xmodmap```里。
 
 
-即: `vim ~/.Xmodmap` 写入
+即: `vim ~/.Xmodmap` 写入(以`!`开头的是注释):
 
 ```
 ! 方案 A
@@ -100,7 +100,7 @@ vim ~/.Xmodmap
 写入下面这些代码
 
 ```
-! 方案 C
+! 方案 A pro
 remove Lock = Caps_Lock
 keycode  9 = Caps_Lock NoSymbol Caps_Lock
 keycode  66 = Escape NoSymbol Escape
@@ -143,4 +143,4 @@ remove Lock = Caps_Lock
 `xmodmap ~/.Xmodmap` 
 
 ## 参考
-ArchLinuxWiki is the best!
+[ArchLinuxWiki](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html) is the best!
