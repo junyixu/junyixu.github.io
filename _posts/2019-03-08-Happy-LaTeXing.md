@@ -62,7 +62,7 @@ tags:
 
 ### 安装 texlive
 
-#### 方法一
+#### [方法一](https://stone-zeng.github.io/2018-05-13-install-texlive-ubuntu/)
 查阅 `texlive-zh-cn`
 使用 Unix installer 安装: 可使用国内大学的开源镜像站，wget 下载 install-tl，执行
 install-tl 脚本。
