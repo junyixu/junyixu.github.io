@@ -23,6 +23,7 @@ tags:
 * 公式体验好，Ultisnips 加成，平均速度几乎可以和手写一样
 
 ![效果图](/img/latex3.gif)
+笔记模版用的是 [ElegantNote](https://github.com/ElegantLaTeX/ElegantNote)
 
 ## 或许是个系列
 
