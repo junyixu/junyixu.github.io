@@ -118,12 +118,12 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 * 插入模式下
 	* 使用 `]]` 关闭 当前环境或计数器, 如: 在末尾添加`end{your environment}`
 	 
-* 即时预览
+* 即时预览  
 配置好 vimtex 后([我的插件配置](https://github.com/junyixu/dotfiles/blob/master/vim/plugs.vim))  
 使用 vim 编辑 .tex时 输入`:VimtexCompile`即可打开预览（当`:w`时会自动刷新）。  
 若嫌此命令太长可以 map 一下。
 
-* 符号替换
+* 符号替换  
 替代文本里夹杂的 LaTeX 代码为相对应的 Unicode，使 *.tex 更易读。等到写个一个多
 月的 LaTeX，练熟 LaTex 后，你可能根本不需要再用即时预览了，这个功能会很有用，真正做到所思即
 所得。
