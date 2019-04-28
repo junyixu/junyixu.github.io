@@ -115,13 +115,11 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 	* 使用 `]]` 关闭 当前环境或计数器, 如: 在末尾添加`end{your environment}`
 	 
 * 即时预览
- 
 配置好 vimtex 后([我的插件配置](https://github.com/junyixu/dotfiles/blob/master/vim/plugs.vim))  
 使用 vim 编辑 .tex时 输入`:VimtexCompile`即可打开预览（当`:w`时会自动刷新）。  
 若嫌此命令太长可以 map 一下。
 
 * 符号替换
- 
 替代文本里夹杂的 LaTeX 代码为相对应的 Unicode，使 *.tex 更易读。等到写个一个多
 月的 LaTeX，练熟 LaTex 后，你可能根本不需要再用即时预览了，这个功能会很有用，真正做到所思即
 所得。
@@ -156,7 +154,7 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 后来由于没有协议，认为不能分发  
 无奈，从 aur 上下载安装吧
 
-其实有了 snips 不需要 mathpix 了，但是写论文时可以从已有的电子书上直接抄公式也是
+其实有了 snips 不需要 mathpix 了，但是写论文时从已有的电子书上直接抄公式也是
 懒癌症患者的乐事啊。
 
 以及，若突然忘记某个公式怎么用 LaTeX 写了，可以点[这个网站](https://webdemo.myscript.com/views/math/index.html)来手写输入
@@ -173,5 +171,5 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 这里推荐下：
 <https://castel.dev/post/lecture-notes-1/>
 
-（后来我基本上把他的代码块全部抄袭了，小哥没给出他的配置，有需要的初学者可以参
+（后来我基本上学习~~抄袭~~他的代码块; 小哥没给出他的 vim 配置，有需要的初学者可以参
 考我的点文件）
