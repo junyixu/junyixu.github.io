@@ -34,11 +34,11 @@ tags:
 * [ ] 存放 A4 纸的文件夹 和 使用彩色标签标记的活页笔记本
 
 #### 电子:
-* [ ] vimwiki 
 * [ ] 滴答清单
-* [ ] anki
-* [ ] 印象笔记: 只是用来网页剪藏`~~~~(>_<)~~~~)`若你有什么网页剪藏的好软件请告诉我
-* [ ] simplenote
+* [ ] [anki](https://zhuanlan.zhihu.com/p/31100580)
+* [ ] onenote: 只是用来网页剪藏`~~~~(>_<)~~~~)`若你有什么网页剪藏的好软件请告诉我
+* [ ] [simplenote](https://app.simplenote.com/)
+* [ ] vimwiki 
 * [ ] inoreader
 * [ ] pocket, Liner(火狐插件) 以及火狐书签
 * [X] LaTeX: 主要用来整理公式多的笔记
@@ -57,7 +57,6 @@ tags:
 * vim 及其插件
 	* aperezdc/vim-template
 	* lervag/vimtex
-	* xuhdev/vim-latex-live-preview
 	* SirVer/ultisnips 和 honza/vim-snippets
 * [mathpix](https://mathpix.com/)
 
@@ -70,7 +69,7 @@ install-tl 脚本。
 
 #### 方法二
 使用源上的 texlive  
-(非 Arch 用户请使用方法一安装，以使用最新版本)
+(**非 Arch 用户**请使用[方法一](https://stone-zeng.github.io/2018-05-13-install-texlive-ubuntu/)安装，以使用最新版本)
 
 ##### 优点
 * 统一管理
@@ -94,10 +93,8 @@ install-tl 脚本。
 ```
 let g:templates_directory = '$HOME/.vim/templates'
 ```
-文件的命名模式是"=template=<pattern>"  
-如:我的 
-
-[templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
+文件的命名模式是"`=template=<pattern>`"  
+如:我的 [templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
 
 
 #### [vimtex](https://github.com/lervag/vimtex)
@@ -105,7 +102,8 @@ let g:templates_directory = '$HOME/.vim/templates'
 而是主张使用 vimtex README 上所推荐的：**vimtex 搭配 Ultisnips**.
 
 
-vimtex 轻量且功能强大，这里只列举几个快捷键(以后有时间再补充)
+
+vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有时间再补充)
 * 普通模式下
 	- 使用`dsc`/`dse`/`ds$`/`dsd` 删除周围的命令(command)，环境(environment)，计数器(delimiter)
 	- 使用`csc`/`cse`/`cs$`/`csd` 修改周围的命令(command)，环境(environment)，计数器(delimiter)
@@ -116,30 +114,28 @@ vimtex 轻量且功能强大，这里只列举几个快捷键(以后有时间再
 
 * 插入模式下
 	* 使用 `]]` 关闭 当前环境或计数器, 如: 在末尾添加`end{your environment}`
+	 
+* 即时预览
+ 
+配置好 vimtex 后([我的插件配置](https://github.com/junyixu/dotfiles/blob/master/vim/plugs.vim))  
+使用 vim 编辑 .tex时 输入`:VimtexCompile`即可打开预览（当`:w`时会自动刷新）。  
+若嫌此命令太长可以 map 一下。
 
 #### [Ultisnip](https://github.com/SirVer/ultisnips)
-这只是个代码块引擎  
+这**只**是个代码块引擎  
 你还需要代码块合集
 
-前人栽树后人乘凉，我们可以下载别人写好的代码块合集 如 [honza/vim-snippets](https://github.com/honza/vim-snippets)
+前人栽树后人乘凉，我们可以下载别人写好的代码块合集 如
+[honza/vim-snippets](https://github.com/honza/vim-snippets)(几乎囊括了所有语言)  
 当然，也可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块合集作为补充。  
 如不嫌弃，可以看看[我的UltiSnips目录](https://github.com/junyixu/dotfiles/blob/master/vim/UltiSnips/tex.snippets)
 
-之后我们就可以愉快地输入`b<tab>`
+之后我们就可以愉快地使用 snips 啦。  
+举个例子：输入`b<tab>`
 补全
 再按
-`tab` 或者`<ctrl-J>`跳转到下一个
+`tab` 跳转到下一个
 
-#### [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
-这个插件起到了即时预览的作用。
-配置好你的 pdf 阅读器 比如这里我用 okular
-```
-let g:livepreview_previewer = 'okular'
-```
-使用 vim 编辑 .tex时 输入`:LLPStartPreview`即可打开预览  
-~~然而，vim 用户真的会打这么长的命令吗，当然是 map 一下啦~~
-
-查看`vimtex`的手册，它似乎自带预览命令，不过我没理解怎么使用。
 
 #### You Complete Me
 
@@ -152,6 +148,11 @@ let g:livepreview_previewer = 'okular'
 原本 archlinuxcn 源上是有 mathpix 的  `/(ㄒoㄒ)/~~)`  
 后来由于没有协议，认为不能分发  
 无奈，从 aur 上下载安装吧
+
+其实有了 snips 不需要 mathpix 了，但是写论文时可以从已有的电子书上直接抄公式也是
+懒癌症患者的乐事啊。
+
+以及，若突然忘记某个公式怎么用 LaTeX 写了，可以点[这个网站](https://webdemo.myscript.com/views/math/index.html)来手写输入
 	  
 ## 参考
 <http://mednoter.com/UltiSnips.html>  
@@ -159,8 +160,11 @@ let g:livepreview_previewer = 'okular'
 
 
 ## 后记
-这个世界啊...在我写好这篇博客的数天后，偶然发现国外一篇用 vim 来 LaTeXing 的博
+这个世界啊...在我写好这篇博客的数天后，偶然发现一比利时小哥的一篇用 vim 来 LaTeXing 的博
 文，
 而且这位几乎把 代码块 用到了炉火纯青的境界，我这篇相形见绌了。
 这里推荐下：
 <https://castel.dev/post/lecture-notes-1/>
+
+（后来我基本上把他的代码块全部抄袭了，小哥没给出他的配置，有需要的初学者可以参
+考我的点文件）
