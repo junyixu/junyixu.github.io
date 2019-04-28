@@ -35,10 +35,11 @@ tags:
 
 #### 电子:
 * [ ] 滴答清单
-* [ ] [anki](https://zhuanlan.zhihu.com/p/31100580)
-* [ ] onenote: 只是用来网页剪藏`~~~~(>_<)~~~~)`若你有什么网页剪藏的好软件请告诉我
-* [ ] [simplenote](https://app.simplenote.com/)
-* [ ] vimwiki 
+* [ ] [Goldendict](https://github.com/Dictionaryphile/GoldenDict_zh_manual)
+* [ ] [Anki](https://zhuanlan.zhihu.com/p/31100580)
+* [ ] OneNote: 只是用来网页剪藏`~~~~(>_<)~~~~)`若你有什么网页剪藏的好软件请告诉我
+* [ ] [Simplenote](https://app.simplenote.com/)
+* [ ] VimWiki 
 * [ ] inoreader
 * [ ] pocket, Liner(火狐插件) 以及火狐书签
 * [X] LaTeX: 主要用来整理公式多的笔记
@@ -60,7 +61,7 @@ tags:
 	* SirVer/ultisnips 和 honza/vim-snippets
 * [mathpix](https://mathpix.com/)
 
-### 安装 texlive
+### 在 Linux 上安装 texlive
 
 #### [方法一](https://stone-zeng.github.io/2018-05-13-install-texlive-ubuntu/)
 查阅 `texlive-zh-cn`
@@ -69,7 +70,7 @@ install-tl 脚本。
 
 #### 方法二
 使用源上的 texlive  
-(**非 Arch 用户**请使用[方法一](https://stone-zeng.github.io/2018-05-13-install-texlive-ubuntu/)安装，以使用最新版本)
+(**非 Arch Linux 用户**请使用[方法一](https://stone-zeng.github.io/2018-05-13-install-texlive-ubuntu/)安装，以使用最新版本)
 
 ##### 优点
 * 统一管理
@@ -97,13 +98,11 @@ let g:templates_directory = '$HOME/.vim/templates'
 如:我的 [templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
 
 
-#### [vimtex](https://github.com/lervag/vimtex)
+#### [Vimtex](https://github.com/lervag/vimtex)
 我曾 google "vim latex"，一堆使用 vim-latex 的文章。 我个人并不推荐。  
 而是主张使用 vimtex README 上所推荐的：**vimtex 搭配 Ultisnips**.
 
-
-
-vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有时间再补充)
+Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有时间再补充)
 * 普通模式下
 	- 使用`dsc`/`dse`/`ds$`/`dsd` 删除周围的命令(command)，环境(environment)，计数器(delimiter)
 	- 使用`csc`/`cse`/`cs$`/`csd` 修改周围的命令(command)，环境(environment)，计数器(delimiter)
@@ -120,6 +119,14 @@ vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 配置好 vimtex 后([我的插件配置](https://github.com/junyixu/dotfiles/blob/master/vim/plugs.vim))  
 使用 vim 编辑 .tex时 输入`:VimtexCompile`即可打开预览（当`:w`时会自动刷新）。  
 若嫌此命令太长可以 map 一下。
+
+* 符号替换
+ 
+替代文本里夹杂的 LaTeX 代码为相对应的 Unicode，使 *.tex 更易读。等到写个一个多
+月的 LaTeX，练熟 LaTex 后，你可能根本不需要再用即时预览了，这个功能会很有用，真正做到所思即
+所得。
+
+若你需要更好的效果可以尝试插件[KeitaNakamura/tex-conceal.vim](https://github.com/KeitaNakamura/tex-conceal.vim)
 
 #### [Ultisnip](https://github.com/SirVer/ultisnips)
 这**只**是个代码块引擎  
