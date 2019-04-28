@@ -23,7 +23,11 @@ tags:
 * 公式体验好，Ultisnips 加成，平均速度几乎可以和手写一样
 
 ![效果图](/img/latex3.gif)
-笔记模版用的是 [ElegantNote](https://github.com/ElegantLaTeX/ElegantNote)
+笔记模版用的是 [elegantnote](https://github.com/ElegantLaTeX/ElegantNote)
+
+这里补充说明下
+* vim-template: 用 vim 打开任意空文件就会根据你的后缀(如.cpp)出现相应的模版
+* LaTeX 模版: 以.cls 结尾的文本文件，**一般**在`/usr/share/texmf-dist/tex/latex/`目录下；使用时只要将.cls 之前的**该文本文件的名字**放在documentclass 的花括号里面就行了。
 
 ## 或许是个系列
 
