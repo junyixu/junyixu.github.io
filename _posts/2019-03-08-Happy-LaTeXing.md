@@ -16,11 +16,15 @@ tags:
 ## 摘要
 这是一篇我在
 [ArchLinux](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html)
-下 ~~clone 别人的模版后~~ 用 vim 流畅地整理笔记的小记。自从用了 LaTeX （雷太赫） 之后再也不想回 M$ Word 了：
+下用 vim 愉快地整理笔记的小记。(其实在 windows 上我也是用
+vim 写 LaTeX 的, 但是 powershell 用不惯, 体验整体没有 Linux 好, 不过写的还算流畅) 
+
+## 一些说服你使用 LaTeX (雷太赫) 的理由
+* [用雷太赫可以解决大学学业生涯上一个非常根本的需求](http://www.kylen314.com/archives/7245)
 * [LaTeX 是内容与样式分离的](https://liam.page/2019/03/18/separation-of-content-and-presentation/)
-* 再也不要打开 Word 等数秒钟啦，只要在终端输入 gvim(或vim或nvim) *.tex 后瞬间 template 就位，
-  甚至光标也处于对应位置，你要做的只是所思即所得
+* 可以使用自己喜欢的文本编辑器, 比如 vim: 再也不要打开 Word 等数秒钟啦，只要在终端输入 gvim(或vim或nvim) *.tex 后瞬间 template 就位，甚至光标也处于对应位置，你要做的只是所思即所得
 * 公式体验好，Ultisnips 加成，平均速度几乎可以和手写一样
+* Pandoc 可以愉快地把 .tex 转换为多种格式
 
 ![效果图](/img/latex3.gif)
 笔记模版用的是 [elegantnote](https://github.com/ElegantLaTeX/ElegantNote)
@@ -29,33 +33,6 @@ tags:
 * vim-template: 用 vim 打开任意空文件就会根据你的后缀(如.cpp)出现相应的模版
 * LaTeX 模版: 以.cls 结尾的文本文件，**一般**在`/usr/share/texmf-dist/tex/latex/`目录下；使用时只要将.cls 之前的**该文本文件的名字**放在documentclass 的花括号里面就行了。
 
-## 或许是个系列
-
-灵感来自于 萌狼姐姐的 [知识管理ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html)    
-我的知识管理体系太乱了，记笔记或者 todolist 大致有这么几个地方
-
-#### 纸质:
-* [ ] 存放 A4 纸的文件夹 和 使用彩色标签标记的活页笔记本
-
-#### 电子:
-* [ ] 滴答清单
-* [ ] [Goldendict](https://github.com/Dictionaryphile/GoldenDict_zh_manual)
-* [ ] [Anki](https://zhuanlan.zhihu.com/p/31100580)
-* [ ] OneNote: 只是用来网页剪藏`~~~~(>_<)~~~~)`若你有什么网页剪藏的好软件请告诉我
-* [ ] [Simplenote](https://app.simplenote.com/)
-* [ ] VimWiki 
-* [ ] inoreader
-* [ ] pocket, Liner(火狐插件) 以及火狐书签
-* [X] LaTeX: 主要用来整理公式多的笔记
-
-为什么要用 LaTeX 整理笔记呢，当然是因为没有惠狐姐姐那么清秀的字迹啦。  
-时间长了我自己都不认识我当时在写什么了……
-![字迹](/img/ugly.jpg)
-
-[惠狐姐姐的 Wacom Bamboo Slate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/)…
-~~Hmmm, 考完试忘写了（逃~~
-
-![评论](/img/latex2.png)
 
 ## 用料
 * texlive
@@ -117,18 +94,22 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 
 * 插入模式下
 	* 使用 `]]` 关闭 当前环境或计数器, 如: 在末尾添加`end{your environment}`
+
+* 查看对应的 pdf  
+`:VimtexView`
 	 
 * 即时预览  
-配置好 vimtex 后([我的插件配置](https://github.com/junyixu/dotfiles/blob/master/vim/plugs.vim))  
+此功能其实是调用 latexmk, 若有兴趣, 可以查看 latexmk 和 vimtex 的文档; 若你认为*
+太长不看*…… 这是([我的插件配置](https://github.com/junyixu/vim/blob/master/unix_plugs.vim))  
 使用 vim 编辑 .tex时 输入`:VimtexCompile`即可打开预览（当`:w`时会自动刷新）。  
 若嫌此命令太长可以 map 一下。
 
 * 符号替换  
-替代文本里夹杂的 LaTeX 代码为相对应的 Unicode，使 *.tex 更易读。等到写个一个多
-月的 LaTeX，练熟 LaTex 后，你可能根本不需要再用即时预览了，这个功能会很有用，真正做到所思即
-所得。
-
-若你需要更好的效果可以尝试插件[KeitaNakamura/tex-conceal.vim](https://github.com/KeitaNakamura/tex-conceal.vim)
+替代文本里夹杂的 LaTeX 代码为相对应的 Unicode，使 *.tex 更易读。等到你写了近一个
+月的 LaTeX，练熟 LaTex 后，可能根本不需要再用即时预览了。这时，此功能会很有用，真正做到所思即所得。  
+【注】: 确保你的字体中有相应的 Unicode, 比如 windows 的 Courier_New 就会把 LaTeX
+代码映射成豆腐块。  
+若你需要更好的效果可以尝试插件[PietroPate/vim-tex-conceal](https://github.com/PietroPate/vim-tex-conceal)
 
 #### [Ultisnip](https://github.com/SirVer/ultisnips)
 这**只**是个代码块引擎  
@@ -137,14 +118,16 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 前人栽树后人乘凉，我们可以下载别人写好的代码块合集 如
 [honza/vim-snippets](https://github.com/honza/vim-snippets)(几乎囊括了所有语言)  
 当然，也可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块合集作为补充。  
-如不嫌弃，可以看看[我的UltiSnips目录](https://github.com/junyixu/dotfiles/blob/master/vim/UltiSnips/tex.snippets)
+如:[我的UltiSnips目录](https://github.com/junyixu/vim/blob/master/UltiSnips/tex.snippets)
 
 之后我们就可以愉快地使用 snips 啦。  
 举个例子：输入`b<tab>`
 补全
 再按
 `tab` 跳转到下一个
-
+推荐 <https://castel.dev/post/lecture-notes-1/> 的 snips  
+（后来我基本上学习~~抄袭~~他的代码块; 这位比利时小哥没给出他的 vim 配置，有需要的初学者可以参
+考我的点文件）
 
 #### You Complete Me
 
@@ -167,13 +150,23 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 <http://mednoter.com/UltiSnips.html>  
 <https://segmentfault.com/a/1190000006036434>
 
-
 ## 后记
-这个世界啊...在我写好这篇博客的数天后，偶然发现一比利时小哥的一篇用 vim 来 LaTeXing 的博
-文，
-而且这位几乎把 代码块 用到了炉火纯青的境界，我这篇相形见绌了。
-这里推荐下：
-<https://castel.dev/post/lecture-notes-1/>
 
-（后来我基本上学习~~抄袭~~他的代码块; 小哥没给出他的 vim 配置，有需要的初学者可以参
-考我的点文件）
+这篇看了萌狼姐姐的 [知识管理
+ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html) 后分享自己
+LaTeXing 的小记到此结束。     
+我这样做知识管理：
+#### 纸质:
+* 存放 A4 纸的文件夹 和 使用彩色标签标记的活页笔记本
+#### 电子:
+* LaTeX: 主要用来整理公式多的笔记
+* 滴答清单
+* [Goldendict](https://github.com/Dictionaryphile/GoldenDict_zh_manual)
+* [Anki](https://zhuanlan.zhihu.com/p/31100580)
+* OneNote: 可以做网页剪藏、导入 pdf 和 M$ office, b站上有很多教程；配合 surface pro3 体验相当好
+* [Simplenote](https://app.simplenote.com/) 轻量的笔记软件，可以当私人的 pastebin 使用
+* VimWiki: 别人做演讲、演示的时候，在下面速记相当方便
+* inoreader
+* pocket, Liner(火狐插件) 以及火狐书签
+
+[惠狐姐姐的 WacomBambooSlate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/) 好像很不错的样子，可惜没钱买…
