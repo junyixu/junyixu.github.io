@@ -16,15 +16,16 @@ tags:
 ## 摘要
 这是一篇我在
 [ArchLinux](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html)
-下用 vim 愉快地整理笔记的小记。(其实在 windows 上我也是用
-vim 写 LaTeX 的, 但是 powershell 用不惯, 体验整体没有 Linux 好, 不过写的还算流畅) 
+下用 vim 愉快地整理笔记的小记。
+
+(其实在 Windows 上我也是用vim 写 LaTeX 的, 但是清真的 powershell 用不惯, 体验整体没有 Linux 好, 不过写得还算流畅) 
 
 ## 一些说服你使用 LaTeX (雷太赫) 的理由
-* [用雷太赫可以解决大学学业生涯上一个非常根本的需求](http://www.kylen314.com/archives/7245)
-* [LaTeX 是内容与样式分离的](https://liam.page/2019/03/18/separation-of-content-and-presentation/)
+* [雷太赫是内容与样式分离的](https://liam.page/2019/03/18/separation-of-content-and-presentation/)
 * 可以使用自己喜欢的文本编辑器, 比如 vim: 再也不要打开 Word 等数秒钟啦，只要在终端输入 gvim(或vim或nvim) *.tex 后瞬间 template 就位，甚至光标也处于对应位置，你要做的只是所思即所得
 * 公式体验好，Ultisnips 加成，平均速度几乎可以和手写一样
 * Pandoc 可以愉快地把 .tex 转换为多种格式
+* [用雷太赫可以解决大学学业生涯上一个非常根本的需求（maybe）](http://www.kylen314.com/archives/7245)
 
 ![效果图](/img/latex3.gif)
 笔记模版用的是 [elegantnote](https://github.com/ElegantLaTeX/ElegantNote)
@@ -60,8 +61,7 @@ install-tl 脚本。
 
 ##### 缺点
 无法使用 `texdoc`命令 查看文档  (~~然而我只是 tex 小白，看完 lshort后，~~
-~~会用几个宏包， 使用个模版, 熟练地编辑数学公式已经很 happy 啦~~)
-
+~~会用几个宏包， 使用个模版, 熟练地编辑数学公式已经很 happy 啦~~) 
 不过可以查看在线文档嘛
 
 ### vim 插件
@@ -99,8 +99,7 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 `:VimtexView`
 	 
 * 即时预览  
-此功能其实是调用 latexmk, 若有兴趣, 可以查看 latexmk 和 vimtex 的文档; 若你认为*
-太长不看*…… 这是([我的插件配置](https://github.com/junyixu/vim/blob/master/unix_plugs.vim))  
+此功能其实是调用 latexmk 之类的一些自动编译脚本, 若有兴趣, 可以查看 latexmk 和 vimtex 的文档; 若你认为*太长不看*…… 这是([我的插件配置](https://github.com/junyixu/vim/blob/master/unix_plugs.vim))  
 使用 vim 编辑 .tex时 输入`:VimtexCompile`即可打开预览（当`:w`时会自动刷新）。  
 若嫌此命令太长可以 map 一下。
 
@@ -124,9 +123,9 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 举个例子：输入`b<tab>`
 补全
 再按
-`tab` 跳转到下一个
+`tab` 跳转到下一个。  
 推荐 <https://castel.dev/post/lecture-notes-1/> 的 snips  
-（后来我基本上学习~~抄袭~~他的代码块; 这位比利时小哥没给出他的 vim 配置，有需要的初学者可以参
+（后来我基本上~~抄袭~~学习他的代码块; 这位比利时小哥没给出他的 vim 配置，有需要的初学者可以参
 考我的点文件）
 
 #### You Complete Me
@@ -142,19 +141,21 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 无奈，从 aur 上下载安装吧
 
 其实有了 snips 不需要 mathpix 了，但是写论文时从已有的电子书上直接抄公式也是
-懒癌症患者的乐事啊。
+懒癌患者的乐事啊。
 
-以及，若突然忘记某个公式怎么用 LaTeX 写了，可以点[这个网站](https://webdemo.myscript.com/views/math/index.html)来手写输入
-	  
+若突然忘记某个公式怎么用 LaTeX 写了，可以点[这个网站](https://webdemo.myscript.com/views/math/index.html)来手写输入
+
 ## 参考
 <http://mednoter.com/UltiSnips.html>  
 <https://segmentfault.com/a/1190000006036434>
 
-## 后记
+## 请给我提意见或建议哈~
+若博文中出现错误，请一定要指出啊；或你也用 LaTeX 记笔记、写论文，有什么建议，欢迎在评论区提出~
 
-这篇看了萌狼姐姐的 [知识管理
-ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html) 后分享自己
-LaTeXing 的小记到此结束。     
+## 两只可爱小姐姐的博客链接
+
+这篇看了萌狼姐姐的 [知识管理ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html) 后有所感悟从而分享自己LaTeXing 的小记到此结束。     
+
 我这样做知识管理：
 #### 纸质:
 * 存放 A4 纸的文件夹 和 使用彩色标签标记的活页笔记本
@@ -163,10 +164,11 @@ LaTeXing 的小记到此结束。
 * 滴答清单
 * [Goldendict](https://github.com/Dictionaryphile/GoldenDict_zh_manual)
 * [Anki](https://zhuanlan.zhihu.com/p/31100580)
-* OneNote: 可以做网页剪藏、导入 pdf 和 M$ office, b站上有很多教程；配合 surface pro3 体验相当好
-* [Simplenote](https://app.simplenote.com/) 轻量的笔记软件，可以当私人的 pastebin 使用
+* OneNote: 可以做网页剪藏、导入 pdf 和 M$ office, b站上有很多教程；配合我的二手 surface pro3 体验相当好
+* [Simplenote](https://app.simplenote.com/) 轻量的笔记软件，可以作私人的 pastebin 用
 * VimWiki: 别人做演讲、演示的时候，在下面速记相当方便
 * inoreader
 * pocket, Liner(火狐插件) 以及火狐书签
 
-[惠狐姐姐的 WacomBambooSlate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/) 好像很不错的样子，可惜没钱买…
+[惠狐姐姐的
+WacomBambooSlate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/) 很不错的样子，可惜我没钱买…
