@@ -16,26 +16,26 @@ tags:
 ## 起因
 我答应明天早晨分享我关于计算流体力学的拙见，已经在 Onenote 上准备了相关资料，并准备用 Surface 手写推导一些公式，我需要一个可以无线投屏的显示屏(之前没买 Surface Mini DisplayPort).  
 晚上去测试发现，学校的三星显示屏不支持无线投屏。为了信守诺言，我尝试把 Surface
-里的 Windows10无线投屏到我的笔记本电脑里的 Windows10，再通过 HDMI 连接到三星显示屏。
-然而我的笔记本上的 Windows10 是用**超精简版**的镜像装的，故要重装 Win10 系统接收 Surface 的投屏(反正里面也没啥东西)，然后手贱误操作**把 Arch 的 512M 的 `/boot/` 分区给删了**。
+里的 Windows10 无线投屏到我的笔记本电脑里的 Windows10，再通过 HDMI 连接到三星显示屏。
+然而我的笔记本上的 Windows10 是用**超精简版**的镜像装的，故要重装 Win10 系统(反正里面也没啥东西)以接收 Surface 的投屏，然后手贱误操作**把 Arch 的 512M 的 `/boot/` 分区给删了**。
 
 ## 慌张地去 ArchLinuxcn 群
 
 想起来自己有些时候没去 ArchLinuxcn 群了, 大家依旧那么热心，谜之感动  
 ![cuihao](/img/bootcuihao.png)
 
-## 插上 ArchLinuxiso 开始
+## 插上 ArchLinuxiso
 开始敲命令：
 ```
 # fdisk /dev/sda
 ```
 发现原来的 /dev/sda1(boot分区) 没了，/dev/sda2(swap) 变成了 /dev/sda1，/dev/sda3(根分区) 变成了 /dev/sda2。
 
-无奈：
+无奈:用 fdisk 新建了一个 sda3，然后：
 ```
 # mkfs.vfat /dev/sda3
 # mount /dev/sda2 /mnt
-# mount /dev/sda2 /mnt/boot
+# mount /dev/sda3 /mnt/boot
 # arch-chroot /mnt
 ```
 ## 重新装 /boot 下的包
@@ -54,7 +54,7 @@ tags:
 多谢仙子！
 
 ## 安装 grub 引导
-群上的大神们用 systemd-boot, rEFInd 等等的各式 bootloader, 我是小白，笨拙地
+群上的大神们用 systemd-boot, rEFInd 等等的各式 bootloader, 我是小白，仍用 grub，笨拙地
 ``` 
 # grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
 ```
@@ -69,7 +69,7 @@ tags:
 是 UUID 变了（  
 ![UUID](/img/bootUUID.png)  
 无奈，先修好再说：直接把 fstab 中的 boot分区的UUID 改成 /dev/sda3
-## 显卡驱动
+## N卡驱动
 重启后屏幕颜色变了，重装显卡驱动(简单粗暴)
 ```
 $ sudo pacman -S nvidia nvdia-utils
