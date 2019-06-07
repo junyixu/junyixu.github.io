@@ -12,21 +12,19 @@ tags:
 - grub
 - Windows10
 ---
-# 修复引导
+
 ## 起因
-我答应明天早晨分享我关于计算流体力学的拙见，已经在 onenote
-上准备了相关资料，并准备用 surface 手写推导一些公式，我需要一个可以无线投屏的显
-示屏(之前没买 Surface Mini DisplayPort).  
-晚上去测试发现，学校的三星显示屏不支持无线投屏，为了信守诺言，我尝试把 surface
-里的 windows10
-无线投屏到我的笔记本电脑里的 windows10，再通过 HDMI 连接到三星显示屏。然而我的笔记本上的 windows10 是用超精简版的镜像装的，故要重装系统(反正里面也没啥东西)，然后手贱误操作把 arch 的 512M 的 `/boot/` 分区给删了。
+我答应明天早晨分享我关于计算流体力学的拙见，已经在 Onenote 上准备了相关资料，并准备用 Surface 手写推导一些公式，我需要一个可以无线投屏的显示屏(之前没买 Surface Mini DisplayPort).  
+晚上去测试发现，学校的三星显示屏不支持无线投屏。为了信守诺言，我尝试把 Surface
+里的 Windows10无线投屏到我的笔记本电脑里的 Windows10，再通过 HDMI 连接到三星显示屏。
+然而我的笔记本上的 Windows10 是用**超精简版**的镜像装的，故要重装 Win10 系统接受 Surface 的投屏(反正里面也没啥东西)，然后手贱误操作**把 Arch 的 512M 的 `/boot/` 分区给删了**。
 
-## 慌张地去 archlinuxcn 群
+## 慌张地去 ArchLinuxcn 群
 
-立刻就有人回答，大家都很热心, 感动
+想起来自己有些时候没去 ArchLinuxcn 群了, 大家依旧那么热心，谜之感动  
 ![cuihao](/img/bootcuihao.png)
 
-## 插上 archlinuxiso
+## 插上 ArchLinuxiso 开始
 开始敲命令：
 ```
 # fdisk /dev/sda
@@ -38,7 +36,7 @@ tags:
 # mkfs.vfat /dev/sda3
 # mount /dev/sda2 /mnt
 # mount /dev/sda2 /mnt/boot
-# arch-chroot
+# arch-chroot /mnt
 ```
 ## 重新装 /boot 下的包
 ![bootqu2](/img/bootqu2.png)  
@@ -51,7 +49,7 @@ tags:
 ![awk2](/img/bootawk2.jpg)  
 仙子问那个出错的文件是什么  
 ![awk3](/img/bootawk3.jpg)  
-![awk4](/img/bootawk4.jpg)  
+![awk4](/img/bootawk4.png)  
 多谢仙子！
 
 ## 安装 grub 引导
@@ -59,7 +57,7 @@ tags:
 ``` 
 # grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
 ```
-使用os-prober自动配置grub.cfg
+使用 os-prober 自动配置 grub.cfg
 ```
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -67,17 +65,18 @@ tags:
 经过上述的操作后，重启，发现找不到盘了  
 ![fstab1](/img/bootfstab1.jpg)  
 ![fstab2](/img/bootfstab2.jpg)  
-是 UUID 变了  
+是 UUID 变了（  
 ![UUID](/img/bootUUID.png)  
 无奈，先修好再说：直接把 fstab 中的 boot分区的UUID 改成 /dev/sda3
 ## 显卡驱动
-重启后屏幕颜色变了,额，重装显卡驱动(简单粗暴)
+重启后屏幕颜色变了，重装显卡驱动(简单粗暴)
 ```
 $ sudo pacman -S nvidia nvdia-utils
 ```
-重启，熟悉的 arch，熟悉的 KDE
+再次重启，熟悉的 Arch，熟悉的 KDE。  
+![arch](/img/btwarch.webp)
 
 ## 总结
-1. 家中常备 archlinuxiso，arch 坏了可以修，win10 坏了可以重装
-2. 没有 夏娜, 仙子，fc 等大神我是绝对不可能修好 /boot 分区的，以后还是多看 wiki，多读书，学习更多的知识是防震减灾的最好方式
+1. 家中常备 ArchLinuxiso，Arch 坏了可以**修**，Windoze 坏了可以**重装**
+2. 没有 VOID001, 仙子，fc 等大神我是绝对不可能修好 /boot 分区的，以后还是多看 wiki，多读书。学习更多的知识是防震减灾的最好方式。
 3. 进行删分区等重要操作的时候一定要小心，“删”是一秒钟的事，“修”是一小时的事
