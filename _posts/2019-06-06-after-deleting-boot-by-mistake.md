@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      误删除 /boot 分区后修复 Arch Linux
+subtitle:   after deleting boot by mistake
+date:       2019-06-06
+author:     Junix
+header-img: img/post-bg-keybord.jpg
+catalog: true
+tags:
+- Linux
+- bootloader
+- grub
+- Windows10
+---
 # 修复引导
 ## 起因
 我答应明天早晨分享我关于计算流体力学的拙见，已经在 onenote
@@ -10,7 +24,7 @@
 ## 慌张地去 archlinuxcn 群
 
 立刻就有人回答，大家都很热心, 感动
-![cuihao](/img/bootcuihao)
+![cuihao](/img/bootcuihao.png)
 
 ## 插上 archlinuxiso
 开始敲命令：
@@ -27,15 +41,16 @@
 # arch-chroot
 ```
 ## 重新装 /boot 下的包
-![bootqu2](/img/bootqu2)
+![bootqu2](/img/bootqu2.png)
 然后 fc 老师提示在后面再加上 `pacman -S -`就可以了  
-![pacman](/img/pacman)
-![awk1](/img/bootawk1)  
+![pacman](/img/pacman.png)
+多亏了惠狐姐姐这一问，不然我还以为`-`是标准输出呢  
+![awk1](/img/bootawk1.png)  
 一切正常，我输入 y  
-![awk2](/img/bootawk2)  
+![awk2](/img/bootawk2.png)  
 仙子问那个出错的文件是什么  
-![awk3](/img/bootawk3)  
-![awk4](/img/bootawk4)  
+![awk3](/img/bootawk3.png)  
+![awk4](/img/bootawk4.png)  
 
 ## 安装 grub 引导
 群上的大神们用 systemd-boot, rEFInd 等等的各式 bootloader, 我是小白，笨拙地
@@ -48,10 +63,10 @@
 ```
 ## 更改 fstab 里的 UUID
 经过上述的操作后，重启，发现找不到盘了  
-![fstab1](/img/bootfstab1)  
-![fstab2](/img/bootfstab2)  
+![fstab1](/img/bootfstab1.png)  
+![fstab2](/img/bootfstab2.png)  
 是 UUID 变了  
-![UUID](/img/bootUUID)  
+![UUID](/img/bootUUID.png)  
 无奈，先修好再说：直接把 fstab 中的 boot分区的UUID 改成 /dev/sda3
 ## 重装显卡驱动
 重启后屏幕颜色变了,额，重装显卡驱动(简单粗暴)
