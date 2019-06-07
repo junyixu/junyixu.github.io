@@ -75,6 +75,7 @@ tags:
 $ sudo pacman -S nvidia nvdia-utils
 ```
 再次重启，熟悉的 Arch，熟悉的 KDE。  
+![kde](kdescreenshot.png)
 ![arch](/img/btwarch.webp)
 
 ## 总结
