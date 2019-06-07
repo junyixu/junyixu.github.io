@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      误删除 /boot 分区后修复 Arch Linux
-subtitle:   after deleting boot by mistake
+subtitle:   After deleting boot by mistake
 date:       2019-06-06
 author:     Junix
 header-img: img/post-bg-keybord.jpg
@@ -17,7 +17,7 @@ tags:
 我答应明天早晨分享我关于计算流体力学的拙见，已经在 Onenote 上准备了相关资料，并准备用 Surface 手写推导一些公式，我需要一个可以无线投屏的显示屏(之前没买 Surface Mini DisplayPort).  
 晚上去测试发现，学校的三星显示屏不支持无线投屏。为了信守诺言，我尝试把 Surface
 里的 Windows10无线投屏到我的笔记本电脑里的 Windows10，再通过 HDMI 连接到三星显示屏。
-然而我的笔记本上的 Windows10 是用**超精简版**的镜像装的，故要重装 Win10 系统接受 Surface 的投屏(反正里面也没啥东西)，然后手贱误操作**把 Arch 的 512M 的 `/boot/` 分区给删了**。
+然而我的笔记本上的 Windows10 是用**超精简版**的镜像装的，故要重装 Win10 系统接收 Surface 的投屏(反正里面也没啥东西)，然后手贱误操作**把 Arch 的 512M 的 `/boot/` 分区给删了**。
 
 ## 慌张地去 ArchLinuxcn 群
 
@@ -44,6 +44,7 @@ tags:
  fc 老师提示在后面再加上 `pacman -S -`就可以了  
 ![pacman](/img/pacman.png)  
 多亏了惠狐姐姐这一问，不然我还以为`-`是标准输出呢  
+
 ![awk1](/img/bootawk1.jpg)   
 一切正常，我输入 y  
 ![awk2](/img/bootawk2.jpg)  
