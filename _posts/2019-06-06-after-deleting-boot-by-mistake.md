@@ -41,16 +41,18 @@ tags:
 # arch-chroot
 ```
 ## 重新装 /boot 下的包
-![bootqu2](/img/bootqu2.png)
-然后 fc 老师提示在后面再加上 `pacman -S -`就可以了  
-![pacman](/img/pacman.png)
+![bootqu2](/img/bootqu2.png)  
+ void001 老师这番操作太帅了！！！
+ fc 老师提示在后面再加上 `pacman -S -`就可以了  
+![pacman](/img/pacman.png)  
 多亏了惠狐姐姐这一问，不然我还以为`-`是标准输出呢  
-![awk1](/img/bootawk1.png)  
+![awk1](/img/bootawk1.jpg)   
 一切正常，我输入 y  
-![awk2](/img/bootawk2.png)  
+![awk2](/img/bootawk2.jpg)  
 仙子问那个出错的文件是什么  
-![awk3](/img/bootawk3.png)  
-![awk4](/img/bootawk4.png)  
+![awk3](/img/bootawk3.jpg)  
+![awk4](/img/bootawk4.jpg)  
+多谢仙子！
 
 ## 安装 grub 引导
 群上的大神们用 systemd-boot, rEFInd 等等的各式 bootloader, 我是小白，笨拙地
@@ -63,15 +65,15 @@ tags:
 ```
 ## 更改 fstab 里的 UUID
 经过上述的操作后，重启，发现找不到盘了  
-![fstab1](/img/bootfstab1.png)  
-![fstab2](/img/bootfstab2.png)  
+![fstab1](/img/bootfstab1.jpg)  
+![fstab2](/img/bootfstab2.jpg)  
 是 UUID 变了  
 ![UUID](/img/bootUUID.png)  
 无奈，先修好再说：直接把 fstab 中的 boot分区的UUID 改成 /dev/sda3
-## 重装显卡驱动
+## 显卡驱动
 重启后屏幕颜色变了,额，重装显卡驱动(简单粗暴)
 ```
-sudo pacman -S nvidia nvdia-utils
+$ sudo pacman -S nvidia nvdia-utils
 ```
 重启，熟悉的 arch，熟悉的 KDE
 
