@@ -13,8 +13,7 @@ tags:
 - Academic
 ---
 
-
-目前使用 zotero + syncthing 管理书籍和文件
+目前使用 zotero + syncthing 管理书籍和文献
 
 下面方法已弃用
 更新于 2020年 03月 08日 星期日 23:40:58 CST
