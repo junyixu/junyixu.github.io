@@ -12,6 +12,14 @@ tags:
 - Xorg
 - XWindows
 ---
+
+### 新的方法
+
+推荐使用 [将CapsLock键在单击和长按时分别映射为Esc和Ctrl](https://orxing.top/post/d3c3145e.html)
+更新于 2020年 03月 08日 星期日 23:40:58 CST
+
+分割线
+-----
 ### 适用环境和人群
 测试环境是 [ArchLinux](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html) 和 Xorg 
 
