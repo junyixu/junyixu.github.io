@@ -13,6 +13,15 @@ tags:
 - Academic
 ---
 
+
+目前使用 zotero + syncthing 管理书籍和文件
+
+下面方法已弃用
+更新于 2020年 03月 08日 星期日 23:40:58 CST
+
+分割线
+
+-----------
 ## Abstract
 
 PDF is generally an academic standard format, and I also use latex to organize my notes. The PDF Reader is very important to me. After wasting a lot of time trying out PDF Readers in the market, I formed my own formula.
