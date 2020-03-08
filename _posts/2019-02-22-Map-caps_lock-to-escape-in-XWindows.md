@@ -14,8 +14,7 @@ tags:
 ---
 
 ### 新的方法
-
-现推使用 [将CapsLock键在单击和长按时分别映射为Esc和Ctrl](https://orxing.top/post/d3c3145e.html)
+现使用 [将CapsLock键在单击和长按时分别映射为Esc和Ctrl](https://orxing.top/post/d3c3145e.html)
 
 下面方法已弃用
 
