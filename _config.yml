@@ -93,19 +93,15 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Nova",
+        title: "Nova: 我的引路人，帮助了我打开了新世界的大门．",
         href: "https://nova.moe"
     },
     {
-        title: "惠狐之书",
+        title: "惠狐之书：美狐姐姐的书",
         href: "https://blog.megumifox.com"
     },
     {
-        title: "约伊兹的萌狼乡手札",
+        title: "萌狼：长久以来被尊为神的萌狼",
         href: "https://blog.yoitsu.moe/"
-    },
-    {
-        title: "焱落冰寒的博客",
-        href: "http://www.iceplosion.xyz/"
     }
 ]
