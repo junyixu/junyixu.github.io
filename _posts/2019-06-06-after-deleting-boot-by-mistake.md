@@ -53,6 +53,8 @@ tags:
 ![awk4](/img/bootawk4.png)  
 多谢仙子！
 
+## [修复分区顺序](https://superuser.com/questions/393613/how-to-renumber-a-partition/915412#915412) (如果你不在意，这步可以略去)
+
 ## 安装 grub 引导
 群上的大神们用 systemd-boot, rEFInd 等等的各式 bootloader, 我是小白，仍用 grub，笨拙地
 ``` 
