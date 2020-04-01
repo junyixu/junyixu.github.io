@@ -13,16 +13,36 @@ tags:
 - 知识管理
 ---
 
-## 摘要
 这是一篇我在
-[ArchLinux](https://blog.yoitsu.moe/life/archlinux_cn_community_unoffical_newbie_guide.html)
+ArchLinux
 下用 vim 愉快地整理笔记的小记。
 
-(其实在 Windows 上我也是用vim 写 LaTeX 的, 但是清真的 powershell 用不惯, 体验整体没有 Linux 好, 不过写得还算流畅) 
+## 写在前面
 
-## 一些说服你使用 LaTeX (雷太赫) 的理由
+说点个人感~~pian~~触~~jian~~．
+
+### 首先，关于操作系统：
+
+抛开政治，仅谈实用性，每个操作系统都有自己的生态，比如 windows 就适合用来打游戏和用各种私有软件，linux 上用 wine 体验肯定稍微差点，反之，在 windows 上用 vim 写 latex 的体验糟透了．为什么要在 windows 上用 vim ? 何必带着脚镣跳舞？
+
+### 其次，关于 latex 本身
+
+latex 适合“输出”，比如说写实验报告
+（手动滑稽）
+```
+cp 实验报告 1 实验报告 2
+```
+以及写论文，写书（其实 TeX 被发明就是用来写书的）, 不适合用来“输入”-- 把知识印到**脑子**里这种事情你只需要纸、笔和**大脑**．我也只是用 latex 整理笔记（归档）．或者你要电子化，完全可以用类似于 比如说 『惠狐小姐姐的
+WacomBambooSlate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/) ．
+
+### 最后，关于 vim
+
+我用 vim 写 c/c++ cuda python julia matlab, 写 latex 只是顺带
+
+但必须说，用 vim 写 latex 真是太爽了；比如在 latexstudio 上你可能会纳闷为什么世界上会有这么奇怪的语法；而用 vim, 你会感叹 latex 的设计者真是天才，原来这些语法是为了用 vim 高效编辑而设计的（笑~
+
+## 一些说服你使用 LaTeX （雷太赫） 的理由
 * [雷太赫是内容与样式分离的](https://liam.page/2019/03/18/separation-of-content-and-presentation/)
-* 可以使用自己喜欢的文本编辑器, 比如 vim: 再也不要打开 Word 等数秒钟啦，只要在终端输入 gvim(或vim或nvim) *.tex 后瞬间 template 就位，甚至光标也处于对应位置，你要做的只是所思即所得
 * 公式体验好，Ultisnips 加成，平均速度几乎可以和手写一样
 * Pandoc 可以愉快地把 .tex 转换为多种格式
 * [用雷太赫可以解决大学学业生涯上一个非常根本的需求（maybe）](http://www.kylen314.com/archives/7245)
@@ -31,104 +51,104 @@ tags:
 笔记模版用的是 [elegantnote](https://github.com/ElegantLaTeX/ElegantNote)
 
 这里补充说明下
-* vim-template: 用 vim 打开任意空文件就会根据你的后缀(如.cpp)出现相应的模版
-* LaTeX 模版: 以.cls 结尾的文本文件，**一般**在`/usr/share/texmf-dist/tex/latex/`目录下；使用时只要将.cls 之前的**该文本文件的名字**放在documentclass 的花括号里面就行了。
+* vim-template: 用 vim 打开任意空文件就会根据你的后缀（如.cpp) 出现相应的模版
+* LaTeX 模版：以.cls 结尾的文本文件，比如，**ArchLinux**官方包的安装路径是在`/usr/share/texmf-dist/tex/latex/`目录下；使用时只要将.cls 之前的**该文本文件的名字**放在 documentclass 的花括号里面就行了。vimtex 对 vim 本身的 `gf` 命令做了修改，把光标放在花括号里面的 cls 名字上，按 `gf` 就可以跳转进该文件．
 
 
 ## 用料
 * texlive
-* vim 及其插件
+* vim 及它的小伙伴们
 	* aperezdc/vim-template
 	* lervag/vimtex
 	* SirVer/ultisnips 和 honza/vim-snippets
-* [mathpix](https://mathpix.com/)
+    * fzf 和 ripgrep
+    * ycm
+    * junegunn/vim-easy-align
+    * tagbar 用于显示大纲
+    * textobj 全家桶
+* ~~mathpix~~
 
 ### 在 Linux 上安装 texlive
 
 #### [方法一](https://stone-zeng.github.io/2018-05-13-install-texlive-ubuntu/)
 查阅 `texlive-zh-cn`
-使用 Unix installer 安装: 可使用国内大学的开源镜像站，wget 下载 install-tl，执行
+使用 Unix installer 安装：可使用国内高校的开源镜像站，wget/curl 下载 install-tl，执行
 install-tl 脚本。
+装完后别忘了装 archlinuxcn/texlive-dummy 之类的包．
+
+（若只装中英文大约占用 4G 多的硬盘空间，3G 都是文档）
 
 #### 方法二
-使用源上的 texlive  
-(**非 Arch Linux 用户**请使用[方法一](https://stone-zeng.github.io/2018-05-13-install-texlive-ubuntu/)安装，以使用最新版本)
+使用源上的 texlive
+(**非 Arch Linux 用户**请使用[方法一](https://stone-zeng.github.io/2018-05-13-install-texlive-ubuntu/) 安装，以使用最新版本）
+
+（大约 1.5G，明明比 office 套件小多了好吗）
 
 ##### 优点
 * 统一管理
-* 方便快捷: 对照着 ArchLinux Wiki 直接用 pacman 安装所需的包即可，参考
+* 方便快捷：对照着 ArchLinux Wiki 直接用 pacman 安装所需的包即可，参考
   <https://wiki.archlinux.org/index.php/TeX_Live>
 
 ##### 缺点
-无法使用 `texdoc`命令 查看文档  (~~然而我只是 tex 小白，看完 lshort后，~~
-~~会用几个宏包， 使用个模版, 熟练地编辑数学公式已经很 happy 啦~~) 
-不过可以查看在线文档嘛
+无法使用 `texdoc`命令 查看文档  (~~然而我只是 tex 小白，看完 lshort 后，~~
+~~会用几个宏包， 使用个模版，熟练地编辑数学公式已经很 happy 啦~~)
+不过可以查看在线文档嘛 （网差还是用方法一吧，文档真的很重要，**latex 很多东西不是记的，而是查的**)
 
-### vim 插件
+### vim 的一些配置
+
+
 #### [vim-template](https://github.com/aperezdc/vim-template)
-安装后就可以用了  
-如用 vim 直接创建一个 .c 结尾的文件就会出现 c文件的模版
+安装后就可以用了
+如用 vim 直接创建一个 .c 结尾的文件就会出现 c 文件的模版
 
-当然你可以创建自己的模版文件  
-在vim配置文件中写入
+当然你可以创建自己的模版文件
+在 vim 配置文件中写入
 
 ```
 let g:templates_directory = '$HOME/.vim/templates'
 ```
-文件的命名模式是"`=template=<pattern>`"  
-如:我的 [templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
+文件的命名模式是"`=template=<pattern>`"
+如：我的 [templates](https://github.com/junyixu/dotfiles/tree/master/vim/templates/)
 
 
 #### [Vimtex](https://github.com/lervag/vimtex)
-我曾 google "vim latex"，一堆使用 vim-latex 的文章。 我个人并不推荐。  
+我曾 google "vim latex"，一堆使用 vim-latex 的文章。 我个人并不推荐。
 而是主张使用 vimtex README 上所推荐的：**vimtex 搭配 Ultisnips**.
 
-Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有时间再补充)
-* 普通模式下
-	- 使用`dsc`/`dse`/`ds$`/`dsd` 删除周围的命令(command)，环境(environment)，计数器(delimiter)
-	- 使用`csc`/`cse`/`cs$`/`csd` 修改周围的命令(command)，环境(environment)，计数器(delimiter)
-	- 使用 `tsc`/`tse`使命令(command)或者环境(environment)在加`*`和不加`*`之间互相切换
+vimtex 自定义了几个文本对象，比如 `cae` 去 change around environment, `=ae` 去对齐整个环境
+
+* 一些文本对象
+	- 使用`dsc`/`dse`/`ds$`/`dsd` 删除周围的命令 (command)，环境 (environment)，计数器 (delimiter)
+	- 使用`csc`/`cse`/`cs$`/`csd` 修改周围的命令 (command)，环境 (environment)，计数器 (delimiter)
+	- 使用 `tsc`/`tse`使命令 (command) 或者环境 (environment) 在加`*`和不加`*`之间互相切换
 	-  使用`tsd`/`tsD`使括号在`()` 和 `\left(\right)` 两状态互相切换
-	- 使用 `<F7>` 插入新的命令
 
 
-* 插入模式下
-	* 使用 `]]` 关闭 当前环境或计数器, 如: 在末尾添加`end{your environment}`
-
-* 查看对应的 pdf  
-`:VimtexView`
-	 
-* 即时预览  
-此功能其实是调用 latexmk 之类的一些自动编译脚本, 若有兴趣, 可以查看 latexmk 和 vimtex 的文档; 若你认为*太长不看*…… 这是([我的插件配置](https://github.com/junyixu/vim/blob/master/unix_plugs.vim))  
-使用 vim 编辑 .tex时 输入`:VimtexCompile`即可打开预览（当`:w`时会自动刷新）。  
+* 即时编译
+此功能其实是调用 latexmk 之类的一些自动编译脚本，请查看 latexmk 和 vimtex 的文档使用 vim 编辑 .tex 时 输入`:VimtexCompile`即可打开预览（当`:w`时会自动刷新）。
 若嫌此命令太长可以 map 一下。
 
-* 符号替换  
+我常用的几个快捷键：
+
+* `<leader>ll` 编译
+* `<leader>le` 打开 quickfix 快速跳转到出错的地方（其实我很少用，配合 ale，基本不会有什么错）
+* `<leader>lv` 正向查找
+
+反向查找 请 :help vimtex 自己阅读文档，vimtex 支持多种文档阅读器
+
+* 符号替换
 替代文本里夹杂的 LaTeX 代码为相对应的 Unicode，使 *.tex 更易读。等到你写了近一个
-月的 LaTeX，练熟 LaTex 后，可能根本不需要再用即时预览了。这时，此功能会很有用，真正做到所思即所得。  
-【注】: 确保你的字体中有相应的 Unicode, 比如 windows 的 Courier_New 就会把 LaTeX
-代码映射成豆腐块。  
-若你需要更好的效果可以尝试插件[PietroPate/vim-tex-conceal](https://github.com/PietroPate/vim-tex-conceal)
+月的 LaTeX，练熟 LaTex 后，可能根本不需要再用即时预览了。这时，此功能会很有用，真正做到所思即所得。
+【注】: 确保你的字体支持此功能，比如 windows 的 Courier_New 就会把符号映射成豆腐块。
+若你需要更好的效果可以尝试插件 [PietroPate/vim-tex-conceal](https://github.com/PietroPate/vim-tex-conceal)
 
 #### [Ultisnip](https://github.com/SirVer/ultisnips)
-这**只**是个代码块引擎  
-你还需要代码块合集
 
-前人栽树后人乘凉，我们可以下载别人写好的代码块合集 如
-[honza/vim-snippets](https://github.com/honza/vim-snippets)(几乎囊括了所有语言)  
-当然，也可以在 `~/.vim/UltiSnips/` 目录下创建我们自己的代码块合集作为补充。  
-如:[我的UltiSnips目录](https://github.com/junyixu/vim/blob/master/UltiSnips/tex.snippets)
-
-之后我们就可以愉快地使用 snips 啦。  
-举个例子：输入`b<tab>`
-补全
-再按
-`tab` 跳转到下一个。  
-推荐 <https://castel.dev/post/lecture-notes-1/> 的 snips  
-（后来我基本上~~抄袭~~学习他的代码块; 这位比利时小哥没给出他的 vim 配置，有需要的初学者可以参
-考我的点文件）
+推荐 <https://castel.dev/post/lecture-notes-1/> 的 snips
+（后来我基本上~~抄袭~~学习他的代码块
 
 #### You Complete Me
+vimtex 支持很多补全插件， 我需要用 ycm 写其他语言，就用 ycm 了．详情请 `:help vimtex`
 
 我参考[这篇文章](https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme)
 解决了同时使用 YCM 和 Ultisnips 造成的 tab 键冲突
@@ -136,39 +156,15 @@ Vimtex 轻量且功能强大，这里只列举几个 to make it work(以后有�
 如果您有更好的办法恳请您不吝赐教
 
 ### [mathpix](https://mathpix.com/)
-原本 archlinuxcn 源上是有 mathpix 的  `/(ㄒoㄒ)/~~)`  
-后来由于没有协议，认为不能分发  
+原本 archlinuxcn 源上是有 mathpix 的  `/(ㄒoㄒ)/~~)`
+后来由于没有协议，认为不能分发
 无奈，从 aur 上下载安装吧
 
 其实有了 snips 不需要 mathpix 了，但是写论文时从已有的电子书上直接抄公式也是
 懒癌患者的乐事啊。
 
-若突然忘记某个公式怎么用 LaTeX 写了，可以点[这个网站](https://webdemo.myscript.com/views/math/index.html)来手写输入
+若突然忘记某个公式怎么用 LaTeX 写了，可以点[这个网站](https://webdemo.myscript.com/views/math/index.html) 来手写输入
 
-## 参考
-<http://mednoter.com/UltiSnips.html>  
-<https://segmentfault.com/a/1190000006036434>
-
-## 请给我提意见或建议哈~
-若博文中出现错误，请一定要指出啊；或你也用 LaTeX 记笔记、写论文，有什么建议，欢迎在评论区提出~
-
-## 两只可爱小姐姐的博客链接
-
-这篇看了萌狼姐姐的 [知识管理ABC](https://blog.yoitsu.moe/life/knowledge_manage_0.html) 后有所感悟从而分享自己LaTeXing 的小记到此结束。     
-
-我这样做知识管理：
-#### 纸质:
-* 存放 A4 纸的文件夹 和 使用彩色标签标记的活页笔记本
-#### 电子:
-* LaTeX: 主要用来整理公式多的笔记
-* 滴答清单
-* [Goldendict](https://github.com/Dictionaryphile/GoldenDict_zh_manual)
-* [Anki](https://zhuanlan.zhihu.com/p/31100580)
-* OneNote: 可以做网页剪藏、导入 pdf 和 M$ office, b站上有很多教程；配合我的二手 surface pro3 体验相当好
-* [Simplenote](https://app.simplenote.com/) 轻量的笔记软件，可以作私人的 pastebin 用
-* VimWiki: 别人做演讲、演示的时候，在下面速记相当方便
-* inoreader
-* pocket, Liner(火狐插件) 以及火狐书签
-
-[惠狐姐姐的
-WacomBambooSlate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/) 很不错的样子，可惜我没钱买…
+## 宏包推荐
+* physics 写矩阵特舒服
+* siunitx 用于写单位
