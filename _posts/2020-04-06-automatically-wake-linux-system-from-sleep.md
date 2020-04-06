@@ -4,7 +4,7 @@ title: 自动唤起挂起状态的 Linux
 subtitle: automatically wake linux system from sleep
 date: 2020-04-06 12:13:39
 author:   junyi
-header-img: img/Penguins.jpeg
+header-img: img/Penguins.jpg
 catalog: true
 tags:
 - linux
