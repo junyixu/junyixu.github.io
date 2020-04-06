@@ -4,10 +4,11 @@ title: 自动唤起挂起状态的 Linux
 subtitle: automatically wake linux system from sleep
 date: 2020-04-06 12:13:39
 author:   junyi
-header-img: img/post-bg-coffee.jpeg
+header-img: img/Penguins.jpeg
 catalog: true
 tags:
 - linux
+- nvidia
 ---
 
 博客长草了，来水一篇。
@@ -44,6 +45,9 @@ ExecStart=/usr/local/bin/wake.sh
 
 [Install]
 WantedBy=default.target
+```
+```
+# vim /etc/systemd/system/wake.timer
 ```
 ```
 [Unit]
