@@ -34,8 +34,8 @@ Ctrl 键我是用小指和手掌相连的那块软肉按的，但是 Esc 键实�
 <C-[> 去实现 `Escape`，但对我而言，`Caps Lock`是最不常用的按键并且最好按的键
 。
 
-以及 oh-my-zsh + tmux + vim及其各种插件 大大提升了我在命令行下的效率。什么？？？你居然还不知道 `zsh` 和 `tmux` 为
-何物？Hmmm, 这里推荐一下[程序员内功篇](https://xiaozhou.net/learn-the-command-line-preface-2017-05-12.html)
+以及 ~~oh-my-zsh~~ + tmux + vim及其各种插件 大大提升了我在命令行下的效率。(更新：现在在使用 powerlevel10k 的 Instant Prompt 功能, 暂时不打算放弃 oh-my-zsh)
+
 ### 方案 A
 在查看系统按键映射可以在终端下输入：`xmodmap -pke`
 
