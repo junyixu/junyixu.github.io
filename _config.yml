@@ -3,7 +3,7 @@ title: JuniX Blog
 SEOTitle: Junix Blog
 header-img: img/post-bg-desk.jpg
 email: junyixu0@gmail.com
-description: "Err and err and err again but less and less and less."
+description: "而世之奇伟、瑰怪，非常之观，常在于险远，而人之所罕至焉，故非有志者不能至也。"
 keyword: "c/c++, Linux"
 url: "http://junyixu.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -21,7 +21,7 @@ RSS: true
 github_username:    junyixu
 #facebook_username:  baiying.qiu.7
 #jianshu_username:   e71990ada2fd
-twitter_username:   jy0x0
+# twitter_username:   jy0x0
 
 
 # Build settings
