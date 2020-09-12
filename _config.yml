@@ -55,15 +55,13 @@ kramdown:
 disqus_username: jy0x0
 
 # Gitalk
-# gitalk:
-#   enable: true    #是否开启Gitalk评论
-#   clientID: 5ea9c8b4b203579add27                            #生成的clientID
-#   clientSecret: ce093a14a3249f2ba2fd8aab12f69a190d9e0dc9    #生成的clientSecret
-#   # access_token: eb5ac732a491b2e9673cabb02e1648714a9115e7
-#   repo: junyixu.github.io    #仓库名称
-#   owner: junyixu    #github用户名
-#   admin: junyixu
-#   distractionFreeMode: true #是否启用类似FB的阴影遮罩
+gitalk:
+  enable: false    #是否开启Gitalk评论
+  # access_token: eb5ac732a491b2e9673cabb02e1648714a9115e7
+  repo: junyixu.github.io    #仓库名称
+  owner: junyixu    #github用户名
+  admin: junyixu
+  distractionFreeMode: false #是否启用类似FB的阴影遮罩
 
 
 # 统计
