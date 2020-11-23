@@ -91,6 +91,10 @@ service-worker: true
 # Friends
 friends: [
     {
+        title: "qsdrqs",
+        href: "http://qsdrqs.site/"
+    },
+    {
         title: "Nova: 我的引路人，为我打开了魔法世界的大门．",
         href: "https://nova.moe"
     },
