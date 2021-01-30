@@ -41,6 +41,7 @@ WacomBambooSlate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slat
 这里补充说明下
 * vim-template: 用 vim 打开任意空文件就会根据你的后缀（如.cpp) 出现相应的模版
 * LaTeX 模版：以.cls 结尾的文本文件，比如，**ArchLinux**官方包的安装路径是在`/usr/share/texmf-dist/tex/latex/`目录下；使用时只要将.cls 之前的**该文本文件的名字**放在 documentclass 的花括号里面就行了。vimtex 对 vim 本身的 `gf` 命令做了修改，把光标放在花括号里面的 cls 名字上，按 `gf` 就可以跳转进该文件．
+* 为了合作的时候迁就 windows 用户, 建议设置 `fontset=windows`。~~什么? 你说你是 linux 用户没有 windows 字体？哦，别逗了，搞的跟 linux 用户从没用过 windows 似的~~
 
 
 ## 用料
