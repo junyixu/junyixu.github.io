@@ -19,19 +19,8 @@ ArchLinux
 
 ## 写在前面
 
-说点个人感~~pian~~触~~jian~~．
-
-初中的时候，计算机老师教我们 MS word, 我面对着一层一层的按钮茫然不知所措，每次作业我都是最后一个完成，我那时就得出结论：我不适合学计算机。
-
-直到，我遇见了 LaTeX, 原来，计算机不是藏在一层层下级菜单的奇奇怪怪的按钮，计算机是“人工智能”，你对它说“话”，它就会帮你干活。当我觉得这已经很符合我的思维习惯的时候，我发现了 fuzzy find; 当我已经不再希求世界上有更好用的东西的时候，我在 vim 上用起了正则表达式。原来，我是擅长让计算机听我话的，只是不擅长让 windows 听我话而已。稍微学点“额外的”东西，就会发现计算机如此 powerful.
-
-### 关于操作系统：
-
-抛开政治，仅谈实用性，每个操作系统都有自己的生态，比如 windows 就适合用来打游戏和用各种私有软件，反之，在 windows 上用 vim 写 latex 的体验糟透了，没有 GNU 的好用的工具，配置环境超级麻烦，为什么要在 windows 上用 vim ? 何必带着脚镣跳舞？
-
 ### 关于 latex 本身
-
-此处说的是 LaTeX 而不是 TeX, TeX 和 MS word 是不可以比较的。
+在 Unix like 上用 latex 会更加舒适。
 
 latex 很适合“输出”，比如说写实验报告
 （手动滑稽）
@@ -39,16 +28,9 @@ latex 很适合“输出”，比如说写实验报告
 cp 实验报告1 实验报告2
 ```
 以及写论文，写书（其实 TeX 被发明就是用来写书的）, 不适合用来“输入”-- 把知识理解吸收并印到**脑子**里你只需要纸、笔和**大脑**．(长期记忆可能需要 anki, 不过这是题外话了) 我也只是用 latex 整理笔记（归档）．或者你要电子化，完全可以用类似于 比如说 [惠狐姐姐的
-WacomBambooSlate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/) ．
-
-### 关于 vim
-
-我用 vim 写 c/c++ cuda python julia matlab, 写 latex 只是顺带
-
-但必须说，用 vim 写 latex 真是太爽了；比如在 latexstudio 上你可能会纳闷为什么世界上会有这么奇怪的语法；而用 vim, 你会感叹 latex 的设计者真是天才，原来这些语法是为了用 vim 高效编辑而设计的（笑~
+WacomBambooSlate](https://blog.megumifox.com/public/2018/12/07/wacom-bamboo-slate-review/) 或者 OneNote
 
 ## 一些说服你使用 LaTeX （雷太赫） 的理由
-* [雷太赫是内容与样式分离的](https://liam.page/2019/03/18/separation-of-content-and-presentation/)
 * 公式体验好，Ultisnips 加成，平均速度几乎可以和手写一样
 * Pandoc 可以愉快地把 .tex 转换为多种格式
 * [用雷太赫可以解决大学学业生涯上一个非常根本的需求（maybe）](http://www.kylen314.com/archives/7245)
