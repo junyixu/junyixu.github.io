@@ -20,7 +20,7 @@ $ makepkg -sir
 报错
 ![Install-Bear-Error](/img/install_bear_error.png)
 
-去 aur 看了评论，看起来是与 `interception-tools`，而其又是改`cap esc` 键必备的包，不能动。
+去 aur 看了评论，看起来是与 `interception-tools` 冲突，而其又是改`cap esc` 键必备的包，不能动。
 
 ## 为自己安装 bear
 我都构建好了 bear, 懒得再构建一遍了，直接
