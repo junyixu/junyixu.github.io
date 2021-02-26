@@ -37,3 +37,4 @@ $ stow bear
 
 ## Reference
 * [GNU Stow 的使用](https://linux.cn/article-9467-1.html)
+* [`$HOME/.local`的用途](https://stackoverflow.com/questions/30274743/what-is-the-purpose-of-home-local)
