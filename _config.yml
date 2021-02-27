@@ -91,23 +91,23 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "qsdrqs",
-        href: "http://qsdrqs.site/"
-    },
-    {
-        title: "Nova: 我的引路人，为我打开了魔法世界的大门．",
+        title: "Nova: 为我打开了魔法世界的大门．",
         href: "https://nova.moe"
     },
     {
-        title: "惠狐之书：美狐姐姐的书．",
+        title: "惠狐之书：可爱的美狐姐姐的书。我的第一个朋友❤️️。",
         href: "https://blog.megumifox.com"
     },
     {
-        title: "萌狼：萌萌的，名为赫萝的神．",
+        title: "萌狼：萌萌的，名为赫萝的神。我看她博客装的 Arch Linux，然后掉进一个深不见底的🐇️洞。",
         href: "https://blog.yoitsu.moe/"
     },
     {
         title: "大草的站点",
         href: "https://da1234cao.github.io"
+    },
+    {
+        title: "qsdrqs：朋友一生一起走。",
+        href: "http://qsdrqs.site/"
     }
 ]
