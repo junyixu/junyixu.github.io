@@ -11,7 +11,7 @@ github_repo: "https://github.com/junyixu/junyixu.github.io.git" # you code repos
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "要谦虚．"
+sidebar-about-description: "An open-minded person"
 sidebar-avatar: /img/Killua.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
