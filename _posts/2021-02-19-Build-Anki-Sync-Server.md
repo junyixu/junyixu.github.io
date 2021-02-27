@@ -9,6 +9,7 @@ catalog: true
 tags:
 - anki
 - python
+- android
 ---
 
 ## anki-sync-server

@@ -7,7 +7,7 @@ author:     Junix
 header-img: img/post-bg-2015.jpg
 catalog: true
 tags:
-- linux
+- Linux
 ---
 
 # 安装 bear 报错
