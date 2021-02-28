@@ -12,7 +12,7 @@ tags:
 以下个人配置，具有强烈的个人偏见，如果有哪些地方你认为不妥，欢迎评论。
 
 ## 全局 meta
-设置 `->` 窗口管理 `->`窗口行为 `->` 窗口操作 把 `alt` 改为 `meta`，很多程序如 inkscape, blender, `alt` 是有其他作用的。
+系统设置 `->` 窗口管理 `->`窗口行为 `->` 窗口操作 把 `alt` 改为 `meta`，很多程序如 inkscape, blender, `alt` 是有其他作用的。
 
 注意：如果你使用 tiled menu `alt+右键` 调整窗口大小变为 `meta+右键` 调整窗口大小。
 
@@ -77,7 +77,8 @@ $ kstart5 plasmashell
 有些程序自带 `F11` 表示全屏，如 chromium，可以把 KDE 默认设置全屏快捷键改成 `Alt+F11`
 
 ## OCR
-系统设置`->` 自定义快捷键，使用 `Meta+r`(Recognition) 使用自己糊的[OCR](https://github.com/junyixu/baidu_ocr)。
+系统设置`->` 自定义快捷键，使用 `Meta+r`(Recognition) 调用自己糊的[baidu_ocr](https://github.com/junyixu/baidu_ocr)(需要联网)。
+你也可以选择 [EasyOCR](https://github.com/JaidedAI/EasyOCR) 使用自己的机器离线识别文本。
 
 ## KDE 主题
 
