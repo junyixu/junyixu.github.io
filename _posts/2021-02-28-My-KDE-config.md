@@ -67,9 +67,9 @@ Linux 对触摸板的支持比起 Mac OS 差远了，但是使用
 
 ## 某个窗口程序卡住怎么办
 如 plasmashell 卡死，可以用
-```
-kquitapp5 plasmashell
-kstart5 plasmashell
+```sh
+$ kquitapp5 plasmashell
+$ kstart5 plasmashell
 ```
 命令来重启。
 
@@ -95,7 +95,7 @@ $ cp ~/.config ~/whiteconfig
 最后修改其 desktop 文件，如 wps 表格
 
 ```sh
-cp /usr/share/applications/wps-office-et.desktop ~/.local/share/applications/wps-office-et.desktop
+$ cp /usr/share/applications/wps-office-et.desktop ~/.local/share/applications/wps-office-et.desktop
 ```
 把
 ```
