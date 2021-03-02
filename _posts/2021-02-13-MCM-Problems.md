@@ -25,7 +25,7 @@ tags:
 
 ## 表格和图片的引用
 
-![美赛图片引用](../img/美赛latex图片ref.gif)
+![美赛图片引用](/img/美赛latex图片ref.gif)
 * 在用 word 写作的时候，队友直接写 as shown in `图片/表格` 的`文件名`就行了，可以要求队友给该`文件名`加高亮以提醒自己在这里插图片和表格(以“立体图”举例)。
 * `\usepackage{showkeys}` 显示标签名, 在最终版删掉即可
 
@@ -80,6 +80,7 @@ vim 的 `omni` 可以用在三个地方
 ```
 \begin{Parallel}[c]{0.52\textwidth}{0.43\textwidth}
 \translate{中文句子}{英文句子}
+\end{Parallel}
 ```
 就可以中英并排排版了，注释 ` \usetag{Chinese}` 以恢复全英文排版
 
