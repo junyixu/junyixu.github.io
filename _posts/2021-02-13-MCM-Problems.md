@@ -13,7 +13,7 @@ tags:
 ## 小的注意点
 
 1. 句号逗号: 前面没有空格，后面有空格
-2. 空格(内容)空格
+2. 空格`(`内容`a)`空格，即：括号左右两边要加空格
 3. 若不是换行就不要自己插入回车不然会有 `^M`
 4. 表示百分号要在前面加 `\%`
 5. 用`~`表示空格： `Fig.~ref`
@@ -25,7 +25,8 @@ tags:
 
 ## 表格和图片的引用
 
-* 在用 word 写作的时候，队友直接写 as shown in `图片/表格 的文件名就行了`，可以要求队友给文件名加高亮
+![美赛图片引用](../img/美赛latex图片ref.gif)
+* 在用 word 写作的时候，队友直接写 as shown in `图片/表格` 的文件名就行了，可以要求队友给文件名加高亮以提醒自己在这里插图片和表格。
 * `\usepackage{showkeys}` 显示标签名, 在最终版删掉即可
 
 ## `-` 的用法
@@ -80,7 +81,7 @@ vim 的 `omni` 可以用在三个地方
 \begin{Parallel}[c]{0.52\textwidth}{0.43\textwidth}
 \translate{中文句子}{英文句子}
 ```
-就可以中英并排排版了，注释 ` \usetag{Chinese}` 就可以恢复全英文排版
+就可以中英并排排版了，注释 ` \usetag{Chinese}` 以恢复全英文排版
 
 你以为这就完了？
 
@@ -88,7 +89,7 @@ vim 的 `omni` 可以用在三个地方
 先写完中文，然后用 vim 的 Ultisnip 插件，第一个大括号里面用 VISUAL, 第二个大括号里面返回翻译(可以用各个大厂的翻译API, 我偏爱百度的翻译)。最后再对照中文进行细调。
 
 ## 打包项目给别人
-在项目当前目录的`.latexmk`中写入：
+在项目当前目录的`.latexmkrc`中写入：
 ```
 $pdf_mode = 5;
 $pdflatex = "pdflatex -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape -synctex=1 %O %S";
