@@ -67,6 +67,7 @@ Linux 对触摸板的支持比起 Mac OS 差远了，但是使用
 * Local: 程序内部的菜单在上部，而部分程序不需要菜单，可以平时把菜单收起来
 * 而 blender, inkscape, photoshop 这类程序需要侧栏的按钮，不宜和 Global 混淆
 这种方式比较符合我的直觉。
+
 ~~好吧，也许只是用 windows 的时间太长，习惯了其界面~~😂
 
 ## 某个窗口程序卡住怎么办
@@ -89,8 +90,8 @@ Fcitx 和 KDE 自带的剪贴板就很好用，如果你原来是 windows 10，�
 系统设置`->` 自定义快捷键，使用 `Meta+r`(Recognition) 调用自己糊的[baidu_ocr](https://github.com/junyixu/baidu_ocr)(需要联网)。
 你也可以选择 [EasyOCR](https://github.com/JaidedAI/EasyOCR) 使用自己的机器离线识别文本。
 
-## fontconfig
-我从 windows 和 macOS 上拷贝了它们的字体到 linux，挑选了自己喜欢的几个字体，通过 fontconfig 达到开源、windows、MacOS 字体的混搭效果。
+## Fontconfig
+~~(版权警告) 我从 Windows 和 MacOS 上拷贝了它们的字体到 linux，挑选了自己喜欢的几个字体，通过 fontconfig 达到开源字体、windows平台下字体、MacOS平台下字体的混搭效果。开门，顺丰快递！~~
 
 以下是 fontconfig 的学习资料：
 * <http://www.jinbuguo.com/gui/fonts.conf.html>
