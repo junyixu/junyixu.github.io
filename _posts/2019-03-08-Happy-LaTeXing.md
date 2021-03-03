@@ -3,7 +3,7 @@ layout:     post
 title:      在 ArchLinux 上愉快地 LaTeXing
 subtitle:   Happy LaTeXing
 date:       2019-03-08
-author:     Junix
+author:     Killua
 header-img: img/post-bg-unix-linux.jpg
 catalog: true
 tags:

@@ -3,7 +3,7 @@ layout: post
 title:  我的 KDE 及其全家桶的配置
 subtitle: My KDE Config
 date: 2021-02-28 21:43:33
-author:     Junix
+author:     Killua
 header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:

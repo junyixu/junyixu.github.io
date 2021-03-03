@@ -3,7 +3,7 @@ layout:     post
 title:      升级 texlive
 subtitle:   Update texlive
 date:       2020-12-07
-author:     Junix
+author:     Killua
 header-img: img/post-bg-keybord.jpg
 tags:
 - latex

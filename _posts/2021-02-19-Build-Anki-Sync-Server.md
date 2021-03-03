@@ -3,7 +3,7 @@ layout: post
 title: 使用国内 vps 自建 Anki 同步服务
 subtitle: Build-Anki-Sync-Server
 date: 2021-02-19 21:14:11
-author:     Junix
+author:     Killua
 header-img: img/post-bg-miui6.jpg
 catalog: true
 tags:

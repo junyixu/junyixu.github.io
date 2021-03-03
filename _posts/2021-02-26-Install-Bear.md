@@ -3,7 +3,7 @@ layout: post
 title: 安装 Bear 冲突的解决方案
 subtitle: Install Bear
 date: 2021-02-26 22:43:24
-author:     Junix
+author:     Killua
 header-img: img/post-bg-2015.jpg
 catalog: true
 tags:

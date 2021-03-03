@@ -3,7 +3,7 @@ layout:     post
 title:      误删除 /boot 分区后修复 Arch Linux
 subtitle:   After deleting boot by mistake
 date:       2019-06-06
-author:     Junix
+author:     Killua
 header-img: img/post-bg-keybord.jpg
 catalog: true
 tags:

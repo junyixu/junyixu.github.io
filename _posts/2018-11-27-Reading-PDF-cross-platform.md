@@ -4,7 +4,7 @@ title:      PDF 跨平台解决方案
 comments:   true
 subtitle:   Reading PDF cross-platform
 date:       2018-11-27
-author:     Junix
+author:     Killua
 header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:

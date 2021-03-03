@@ -3,7 +3,7 @@ layout: post
 title: 数模美赛排版遇到的问题
 subtitle: MCM-Problems
 date: 2021-02-13 18:55:20
-author:     Junix
+author:     Killua
 header-img: img/post-bg-map.jpg
 tags:
 - latex
