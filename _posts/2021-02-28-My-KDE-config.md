@@ -80,6 +80,11 @@ $ kstart5 plasmashell
 ## F11
 有些程序自带 `F11` 表示全屏，如 chromium，可以把 KDE 默认设置全屏快捷键改成 `Alt+F11`
 
+## 剪贴板
+KDE 自带的剪贴板就很好用，如果你也是用 windows 69 年的老同志，可以设置快捷键为 `win+v` 调出剪贴板，但不建议，打字的时候实在不好按。
+
+极不推荐 windows 10 自带的剪贴板，连搜索功能都没有，最好用第三方的。
+
 ## OCR
 系统设置`->` 自定义快捷键，使用 `Meta+r`(Recognition) 调用自己糊的[baidu_ocr](https://github.com/junyixu/baidu_ocr)(需要联网)。
 你也可以选择 [EasyOCR](https://github.com/JaidedAI/EasyOCR) 使用自己的机器离线识别文本。
