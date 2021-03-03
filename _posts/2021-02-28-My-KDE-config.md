@@ -106,7 +106,7 @@ Fcitx 和 KDE 自带的剪贴板就很好用，如果你原来是 windows 10，�
 先调好白色主题，然后
 
 ```sh
-$ cp ~/.config ~/whiteconfig
+$ cp ~/.config ~/lightconfig
 ```
 
 再变为暗色主题，
@@ -145,7 +145,7 @@ StartupWMClass=et
 [Desktop Entry]
 Comment=Use WPS Spreadsheets to analyze manage data.
 Comment[zh_CN]=使用WPS表格分析、管理数据
-Exec=XDG_CONFIG_HOME=/home/USERNAME/whiteconfig /usr/bin/et %F
+Exec=XDG_CONFIG_HOME=/home/USERNAME/lightconfig /usr/bin/et %F
 GenericName=WPS Spreadsheets
 GenericName[zh_CN]=WPS 表格
 MimeType=application/wps-office.et;application/wps-office.ett;application/wps-office.ets;application/wps-office.eto;application/wps-office.xls;application/wps-office.xlt;application/vnd.ms-excel;application/msexcel;application/x-msexcel;application/wps-office.xlsx;application/wps-office.xltx;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/wps-office.uos;
@@ -165,4 +165,4 @@ StartupWMClass=et
 ```
 即在`Exec=`前面加上环境变量来在整体暗色主题的情况下让个别程序使用亮色主题。
 
-你可以用二分法在`~/whiteconfig`里面找到那个主题有关的文件，把里面有和主题无关的文件删了(找到后可以告诉我)。由于我的硬盘足够大，就没有去找了。
+你可以用二分法在`~/lightconfig`里面找到那个主题有关的文件，把里面有和主题无关的文件删了(找到后可以告诉我)。由于我的硬盘足够大，就没有去找了。
