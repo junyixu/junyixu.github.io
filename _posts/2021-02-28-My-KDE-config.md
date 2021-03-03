@@ -106,7 +106,7 @@ Fcitx 和 KDE 自带的剪贴板就很好用，如果你原来是 windows 10，�
 先调好白色主题，然后
 
 ```sh
-$ cp ~/.config ~/lightconfig
+$ cp -r ~/.config ~/lightconfig
 ```
 
 再变为暗色主题，
