@@ -58,6 +58,7 @@ Linux 对触摸板的支持比起 Mac OS 差远了，但是使用
 由于儿时长期用 windows 打游戏，我始终相信鼠标是十分符合人体工学的东西，该用就用。
 
 ## 用 latte dock 作为底栏
+![kde底栏](/img/kde_dock.png)
 长按 meta(win键) 显示数字和其他快捷键，比如我使用 `meta(win) + m` 唤出 mathematica，使用 `meta + 8` 唤出终端，左手大拇指向里按，右手中指直接伸直按8，相当快，平时 konsole 不关闭，用的时候直接唤起。
 
 * Global: 应用的选择用底栏实现；
