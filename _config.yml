@@ -91,15 +91,15 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Nova: 为我打开了魔法世界的大门．",
+        title: "Nova: 英文书法超赞的大佬，为我打开了新世界的大门。",
         href: "https://nova.moe"
     },
     {
-        title: "惠狐之书：可爱的美狐姐姐的书。我的第一个朋友❤️️。",
+        title: "惠狐之书：美狐姐姐的书。",
         href: "https://blog.megumifox.com"
     },
     {
-        title: "萌狼：萌萌的，名为赫萝的神。我看她博客装的 Arch Linux，然后掉进一个深不见底的🐇️洞。",
+        title: "萌狼：萌萌的，名为赫萝的神。高产如萌狼，最初我看她博客装的 Arch Linux，然后掉进一个深不见底的🐇️洞。",
         href: "https://blog.yoitsu.moe/"
     },
     {
