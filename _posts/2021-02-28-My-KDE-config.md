@@ -14,7 +14,7 @@ tags:
 ## 全局 meta
 系统设置 `->` 窗口管理 `->`窗口行为 `->` 窗口操作 把 `alt` 改为 `meta`，很多程序如 inkscape, blender, `alt` 是有其他作用的。
 
-注意：如果你使用 tiled menu `alt+右键` 调整窗口大小变为 `meta+右键` 调整窗口大小。
+注意：如果你使用 tiled menu， `alt+右键` 变为 `meta+右键` 以调整窗口大小。
 
 ## konsole
 
