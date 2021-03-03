@@ -89,6 +89,13 @@ Fcitx 和 KDE 自带的剪贴板就很好用，如果你原来是 windows 10，�
 系统设置`->` 自定义快捷键，使用 `Meta+r`(Recognition) 调用自己糊的[baidu_ocr](https://github.com/junyixu/baidu_ocr)(需要联网)。
 你也可以选择 [EasyOCR](https://github.com/JaidedAI/EasyOCR) 使用自己的机器离线识别文本。
 
+## fontconfig
+我从 windows 和 macOS 上拷贝了它们的字体到 linux，挑选了自己喜欢的几个字体，通过 fontconfig 达到开源、windows、MacOS 字体的混搭效果。
+
+以下是 fontconfig 的学习资料：
+* <http://www.jinbuguo.com/gui/fonts.conf.html>
+* <http://marguerite.su/posts/fontconfig_%E5%87%A0%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/>
+
 ## KDE 主题
 
 我非常喜欢亮色微风的古朴风，突出了内容；`canta-kde` 的背景颜色太白太过刺眼，反客为主，干扰视线。
