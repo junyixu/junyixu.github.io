@@ -91,7 +91,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Nova: 英文书法超赞的大佬，为我打开了新世界的大门。",
+        title: "Nova: 英文书法超赞的技术大佬，为我打开了新世界的大门。",
         href: "https://nova.moe"
     },
     {
