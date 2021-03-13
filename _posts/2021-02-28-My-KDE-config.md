@@ -9,7 +9,7 @@ catalog: true
 tags:
 - KDE
 ---
-以下个人配置，具有强烈的个人偏见，如果有哪些地方你认为不妥，欢迎评论。更多配置，请参考 [wiki](https://wiki.archlinux.org/index.php/KDE_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87) 和 [tutorial](https://archlinuxstudio.github.io/ArchLinuxTutorial/#/advanced/beauty)。
+以下个人配置，具有强烈的个人偏见，如果有哪些地方你认为不妥，欢迎评论。更多配置，请参考 [wiki](https://wiki.archlinux.org/index.php/KDE_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)) 和 [tutorial](https://archlinuxstudio.github.io/ArchLinuxTutorial/#/advanced/beauty)。
 
 ## 全局 meta
 系统设置 `->` 窗口管理 `->`窗口行为 `->` 窗口操作 把 `alt` 改为 `meta`，很多程序如 inkscape, blender, `alt` 是有其他作用的。
